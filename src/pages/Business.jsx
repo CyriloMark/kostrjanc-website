@@ -4,7 +4,7 @@ import styles from '../style';
 
 import { getCurrentLang } from '../constants';
 
-import { verify, business } from '../assets';
+import { verify, business, ad } from '../assets';
 
 import Footer from "../components/Footer";
 
@@ -31,45 +31,70 @@ const Business = () => {
 
 
                 {/* description */}
-                <div className={`${styles.paddingY} flex flex-col`}>
-                    <h2 className={`mb-5 ${styles.heading2} max-w-[980px]`}>kostrjanc Business</h2>
+                <div className={`${styles.paddingY} flex sm:flex-row flex-col`}>
 
-                    <p className={`${styles.paragraph} max-w-[720px]`}>
-                        {
-                            getCurrentLang() === "sb" ?
-                                <p>
-                                    Z kostrjanc Business programom móžeće Wy na kostrjanc wabjenje šaltować.
-                                    Z kostrjanc wabenjom móžeće Wy wjace ludźom waše posty a ewenty pokazać a tak wjace ludźi z wašimi powěsćemi docpěć.<br />
-                                    Tohorunja wobsteju tu móžnosć, zo móžeće so werifikować dać. To nima ničo z wabjenjami činić.
-                                    Hdyž so Wy jenož za werifikaciju zajimujeće, stłóće tu: <a href="#verify" className="text-gradient">Werifikacija</a>
-                                </p> :
-                                "Mit dem kostrjanc Business Programm können Sie auf kostrjanc Werbung schalten. Mit kostrjanc Werbungen können Sie mehr Benutzern Ihre Posts und Events zeigen und somit mehr Menschen mit ihren Nachrichten erreichen."
-                        }
-                    </p>
+                    <div className="flex flex-col flex-1">
+                        <h2 className={`mb-5 ${styles.heading2} max-w-[980px]`}>kostrjanc Business</h2>
+
+                        <p className={`${styles.paragraph} max-w-[720px]`}>
+                            {
+                                getCurrentLang() === "sb" ?
+                                    <p>
+                                        Z kostrjanc Business programom móžeće Wy na kostrjanc wabjenje šaltować.
+                                        Z kostrjanc wabenjom móžeće Wy wjace ludźom waše posty a ewenty pokazać a tak wjace ludźi z wašimi powěsćemi docpěć.<br />
+                                        Tohorunja wobsteju tu móžnosć, zo móžeće so werifikować dać. To nima ničo z wabjenjami činić.
+                                        Hdyž so Wy jenož za werifikaciju zajimujeće, stłóće tu: <a href="#verify" className="text-gradient">Werifikacija</a>
+                                    </p> :
+                                    "Mit dem kostrjanc Business Programm können Sie auf kostrjanc Werbung schalten. Mit kostrjanc Werbungen können Sie mehr Benutzern Ihre Posts und Events zeigen und somit mehr Menschen mit ihren Nachrichten erreichen."
+                            }
+                        </p>
+                    </div>
+
+                    <div className={`sm:flex hidden flex-1 ${styles.flexCenter} relative`}>
+                        <div className={`w-[100%] h-[100%] max-w-[240px] max-h-[240px] bg-blue-gradient rounded-full ${styles.flexCenter} z-[5] aspect-square`}>
+                            <img src={business} className={`w-[50%] h-[50%] ${styles.iconAnimation}`} alt="kostrjanc Business programm icon" />
+                        </div>
+                        <div className="absolute z-[0] w-[40%] h-[35%] top-0 red__gradient" />
+                        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full blue__gradient" />
+                        <div className="absolute z-[0] w-[25%] h-[25%] right-20 bottom-20 white__gradient" />
+                    </div>
+
                 </div>
 
                 {/* wie funtioniert werbung */}
-                <div className={`${styles.paddingY} flex flex-col self-end items-end text-end`}>
-                    <h2 className={`mb-5 ${styles.heading2} max-w-[980px]`}>
-                        {
-                            getCurrentLang() === "sb" ?
-                                "Kak funguje kostrjanc wabjenje?" :
-                                "Wie funktionert kostrjanc Werbung?"
-                        }
-                    </h2>
+                <div className={`${styles.paddingY} flex sm:flex-row-reverse flex-col text-end`}>
 
-                    <p className={`${styles.paragraph} max-w-[720px]`}>
-                        {
-                            getCurrentLang() == "sb" ?
-                                <p>
-                                    Wabjenje na kostrjanc je cyle jednorje jedyn post abo jedyn ewent.
-                                    Hdyž sej wužiwar posty na kostrjanc wobhlada, wón druhdy jedne wabjenje widźi.
-                                    Tute wabjenje móže potom waš post abo ewent być. Maće tež móžnosć waše wabjenje wusměrić,
-                                    tak zo so wabjenje jenož wužiwarjam pokaza kiž so za waše wabjenja zajimuja.
-                                </p> :
-                                "serdfaiuhojmwedrjouimipwekod,rü"
-                        }
-                    </p>
+                    <div className="flex flex-col flex-1">
+                        <h2 className={`mb-5 ${styles.heading2} max-w-[980px]`}>
+                            {
+                                getCurrentLang() === "sb" ?
+                                    "Kak funguje kostrjanc wabjenje?" :
+                                    "Wie funktionert kostrjanc Werbung?"
+                            }
+                        </h2>
+
+                        <p className={`${styles.paragraph} max-w-[720px]`}>
+                            {
+                                getCurrentLang() == "sb" ?
+                                    <p>
+                                        Wabjenje na kostrjanc je cyle jednorje jedyn post abo jedyn ewent.
+                                        Hdyž sej wužiwar posty na kostrjanc wobhlada, wón druhdy jedne wabjenje widźi.
+                                        Tute wabjenje móže potom waš post abo ewent być. Maće tež móžnosć waše wabjenje wusměrić,
+                                        tak zo so wabjenje jenož wužiwarjam pokaza kiž so za waše wabjenja zajimuja.
+                                    </p> :
+                                    "serdfaiuhojmwedrjouimipwekod,rü"
+                            }
+                        </p>
+                    </div>
+
+                    <div className={`sm:flex hidden flex-1 ${styles.flexCenter} relative`}>
+                        <div className={`w-[100%] h-[100%] max-w-[240px] max-h-[240px] bg-blue-gradient rounded-full ${styles.flexCenter} z-[5] aspect-square`}>
+                            <img src={ad} className={`w-[50%] h-[50%] ${styles.iconAnimation}`} alt="kostrjanc Business programm icon" />
+                        </div>
+                        <div className="absolute z-[0] w-[40%] h-[35%] top-10 right-20 red__gradient" />
+                        <div className="absolute z-[0] w-[25%] h-[25%] left-20 bottom-20 white__gradient" />
+                    </div>
+
                 </div>
 
                 {/* how to join */}
@@ -110,13 +135,13 @@ const Business = () => {
                         {/* icons */}
                         <div className={`flex flex-row w-full ${styles.flexCenter} my-10`}>
                             <div className={`${styles.flexCenter} flex-1 flex self-center`}>
-                                <div className={`w-[128px] h-[128px] rounded-full ${styles.flexCenter} bg-blue-gradient `}>
-                                    <img src={business} alt="kostrjanc Business programm Icon" className="w-[50%] h-[50%] object-contain" />
+                                <div className={`w-[128px] h-[128px] rounded-full ${styles.flexCenter} bg-blue-gradient aspect-square`}>
+                                    <img src={business} alt="kostrjanc Business programm Icon" className={`w-[50%] h-[50%] object-contain ${styles.iconAnimation}`} />
                                 </div>
                             </div>
                             <div className={`${styles.flexCenter} flex-1 flex self-center`}>
-                                <div className={`w-[128px] h-[128px] rounded-full ${styles.flexCenter} bg-blue-gradient `}>
-                                    <img src={verify} alt="Verify Icon" className="w-[50%] h-[50%] object-contain" />
+                                <div className={`w-[128px] h-[128px] rounded-full ${styles.flexCenter} bg-blue-gradient aspect-square`}>
+                                    <img src={verify} alt="Verify Icon" className={`w-[50%] h-[50%] object-contain ${styles.iconAnimation}`} />
                                 </div>
                             </div>
                         </div>
@@ -171,8 +196,8 @@ const Business = () => {
                             </h2>
 
                             <div className={`${styles.flexCenter} my-5 flex-1 flex self-center`}>
-                                <div className={`w-[128px] h-[128px] rounded-full ${styles.flexCenter} bg-blue-gradient `}>
-                                    <img src={business} alt="kostrjanc Business programm Icon" className="w-[50%] h-[50%] object-contain" />
+                                <div className={`w-[128px] h-[128px] rounded-full ${styles.flexCenter} bg-blue-gradient aspect-square`}>
+                                    <img src={business} alt="kostrjanc Business programm Icon" className={`w-[50%] h-[50%] object-contain ${styles.iconAnimation}`} />
                                 </div>
                             </div>
 
@@ -199,8 +224,8 @@ const Business = () => {
                             </h2>
 
                             <div className={`${styles.flexCenter} my-5 flex-1 flex self-center`}>
-                                <div className={`w-[128px] h-[128px] rounded-full ${styles.flexCenter} bg-blue-gradient `}>
-                                    <img src={verify} alt="Verify Icon" className="w-[50%] h-[50%] object-contain" />
+                                <div className={`w-[128px] h-[128px] rounded-full ${styles.flexCenter} bg-blue-gradient aspect-square`}>
+                                    <img src={verify} alt="Verify Icon" className={`w-[50%] h-[50%] object-contain ${styles.iconAnimation}`} />
                                 </div>
                             </div>
 
@@ -284,8 +309,6 @@ const Business = () => {
             </div>
 
             <div className="absolute w-[25%] h-[40%] z-[0] left-0 blue__gradient" />
-            <div className="absolute w-[50%] h-[5%] z-[0] right-0 top-[75%] red__gradient" />
-            <div className="absolute w-[25%] h-[50%] z-[0] opacity-20 rounded-full left-[25%] top-[100%] white__gradient" />
             <div className="absolute w-[15%] h-[5%] z-[0] rounded-full right-[10%] -bottom-[100%] pink__gradient" />
             <div className="absolute w-[25%] h-[5%] z-[0] rounded-full left-[10%] -bottom-[150%] white__gradient" />
             <div className="absolute w-[25%] h-[40%] z-[0] rounded-full right-5 -bottom-[250%] blue__gradient" />

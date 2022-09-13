@@ -13,7 +13,7 @@ const Footer = () => {
                     <img
                         src={logo}
                         alt="kostrjanc logo"
-                        className="w-[64px] h-[64px] object-contain"
+                        className={`w-[64px] h-[64px] object-contain`}
                     />
                 </div>
 

@@ -14,6 +14,8 @@ const styles = {
   
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
+
+    iconAnimation: "hover:w-[60%] hover:h-[60%] transition:all duration-300",
 };
   
   export default styles;
