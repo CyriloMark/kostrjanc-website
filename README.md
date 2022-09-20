@@ -25,8 +25,8 @@ kostrjanc - 1. Serbski Social Media - Website
 
 ### Installation
 INIT: ./src/app.jsx
-$ git clone https://github.com/CyriloMark/kostrjanc
-$ cd ../kostrjanc/
+$ git clone https://github.com/CyriloMark/kostrjanc-website
+$ cd ../kostrjanc-website/
 $ npm install
 $ npm start
 
