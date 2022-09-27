@@ -1,10 +1,8 @@
-import { useEffect } from 'react';
-
 import styles from './style';
 
 import { Navbar } from "./components";
 
-import { Start, Help, Business, About, Impressum, Contact, AgbLegal } from "./pages";
+import { Start, Help, Business, About, Impressum, Contact, AgbLegal, Formular } from "./pages";
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -21,6 +19,8 @@ const App = () => {
                     <Route path="/stomysmy" element={<About />} />
                     <Route path="/business" element={<Business />} />
                     <Route path="/pomoc" element={<Help />} />
+
+                    <Route path="/pomoc/formular" element={<Formular />} />
 
                     <Route path="/impresum" element={<Impressum />} />
                     <Route path="/impresum/kontakt" element={<Contact />} />

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -35,9 +35,8 @@ const Navbar = () => {
                         className={`cursor-pointer text-white
                             ${activeLang === lang.id ? "scale-100" : "scale-75 hover:scale-100"} transition-all duration-300 ml-5`}
                     >
-                        <a href={window.location.pathname + lang.ending}>
-                            <img src={lang.icon} alt={lang.id} className="w-[21px]" />
-                        </a>
+                        <img title={lang.id} src={lang.icon} alt={lang.id} onClick={() => location.href = location.pathname + lang.ending + location.hash} className="w-[21px]" />
+
                     </li>
                 ))}
             </ul>

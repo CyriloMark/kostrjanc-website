@@ -17,9 +17,10 @@ const Help = () => (
             </p>
         </div>
 
-        <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 sm:flex-col flex-row`}>
+        <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 sm:mb-0 mb-5 sm:flex-col flex-row`}>
             <Button text={getCurrentLang() === "sb" ? "Pomoc" : "Hilfe"} styles={"sm:mr-0 mr-5 sm:mb-5 mb-0"} link={true} to="/pomoc" />
-            <Button text={getCurrentLang() === "sb" ? "Impresum" : "Impressum"} link={true} to="/impresum" />
+            <Button text={getCurrentLang() === "sb" ? "Impresum" : "Impressum"} styles={"sm:mr-0 mr-5 sm:mb-5 mb-0"} link={true} to="/impresum" />
+            <Button text={"Formular"} link to="/pomoc/formular" />
         </div>
     </section>
 )

@@ -27,7 +27,7 @@ const Info = () => (
             }
             {
                 getCurrentLang() === "sb" ?
-                    <p className={`${styles.paragraph} max-w-[720px] mt-5`}>
+                    <p className={`${styles.paragraph} max-w-[720px] ${styles.marginY}`}>
                         Serbska social media platforma <span className="text-gradient">kostrjanc</span> je projekt Cyrila Marka a Korle Baiera.
                         Zaměr wot <span className="text-gradient">kostrjanc</span> je tworjenje serbskeho digitalneho ruma.
                         Z <span className="text-gradient">kostrjanc</span> móža so wobrazy a ewenty we wobrawdźitym času mjez wužiwarjemi dźělić.
@@ -44,7 +44,7 @@ const Info = () => (
                     </p>
             }
 
-            <a href="/#install"><Button styles={`mt-10`} text={getCurrentLang() === "sb" ? "Instalować" : "Installieren"} /></a>
+            <a href="/#install"><Button text={getCurrentLang() === "sb" ? "Instalować" : "Installieren"} /></a>
         </div>
     </section>
 )

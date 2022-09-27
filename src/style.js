@@ -8,12 +8,12 @@ const styles = {
     flexStart: "flex justify-center items-start",
     flexCenterVert: "flex justify-start items-center",
   
-    paddingX: "sm:px-16 px-6",
-    paddingY: "sm:py-16 py-6",
-    padding: "sm:px-16 px-6 sm:py-12 py-4",
+    paddingX: "sm:px-10 px-5",
+    paddingY: "sm:py-10 py-5",
+    padding: "sm:px-10 px-5 sm:py-10 py-2",
   
-    marginX: "sm:mx-16 mx-6",
-    marginY: "sm:my-16 my-6",
+    marginX: "sm:mx-10 mx-5",
+    marginY: "sm:my-10 my-5",
 
     iconAnimation: "hover:w-[60%] hover:h-[60%] transition:all duration-300",
 };

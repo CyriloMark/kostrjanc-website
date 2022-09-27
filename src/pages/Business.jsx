@@ -6,16 +6,19 @@ import { getCurrentLang } from '../constants';
 
 import { verify, business, ad } from '../assets';
 
+import { LinkToFormular } from './Formular';
+
 import Footer from "../components/Footer";
 
 const Business = () => {
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         document.title = getCurrentLang() === "sb" ? "kostrjanc Business program" : "kostrjanc Business Programm";
     }, []);
 
     return (
-        <div onLoad={() => window.scrollTo(0, 0)} className={`bg-primary ${styles.flexCenterVert} flex-col w-full`}>
+        <div className={`bg-primary ${styles.flexCenterVert} flex-col w-full`}>
 
             <div className={`z-[5] flex flex-col ${styles.padding} ${styles.boxWidth}`}>
                 <h1 className={`flex-1 font-barlow font-semibold ss:text-[72px] text-[52px] text-gradient ss:leading-[100.8px] leading-[75px] text-center`}>
@@ -36,7 +39,7 @@ const Business = () => {
                     <div className="flex flex-col flex-1">
                         <h2 className={`mb-5 ${styles.heading2} max-w-[980px]`}>kostrjanc Business</h2>
 
-                        <p className={`${styles.paragraph} max-w-[720px]`}>
+                        <div className={`${styles.paragraph} max-w-[720px]`}>
                             {
                                 getCurrentLang() === "sb" ?
                                     <p>
@@ -47,7 +50,7 @@ const Business = () => {
                                     </p> :
                                     "Mit dem kostrjanc Business Programm können Sie auf kostrjanc Werbung schalten. Mit kostrjanc Werbungen können Sie mehr Benutzern Ihre Posts und Events zeigen und somit mehr Menschen mit ihren Nachrichten erreichen."
                             }
-                        </p>
+                        </div>
                     </div>
 
                     <div className={`sm:flex hidden flex-1 ${styles.flexCenter} relative`}>
@@ -73,7 +76,7 @@ const Business = () => {
                             }
                         </h2>
 
-                        <p className={`${styles.paragraph} max-w-[720px]`}>
+                        <div className={`${styles.paragraph} max-w-[720px]`}>
                             {
                                 getCurrentLang() == "sb" ?
                                     <p>
@@ -84,7 +87,7 @@ const Business = () => {
                                     </p> :
                                     "serdfaiuhojmwedrjouimipwekod,rü"
                             }
-                        </p>
+                        </div>
                     </div>
 
                     <div className={`sm:flex hidden flex-1 ${styles.flexCenter} relative`}>
@@ -99,7 +102,7 @@ const Business = () => {
 
                 {/* how to join */}
                 <section id="verify" className={`${styles.paddingY} flex flex-col`}>
-                    <h2 className={`mb-5 ${styles.heading2} max-w-[980px]`}>
+                    <h2 className={` ${styles.heading2} max-w-[980px]`}>
                         {
                             getCurrentLang() === "sb" ?
                                 "Kak móžu so z čłonom wot kostrjanc Business programa stać?" :
@@ -108,7 +111,7 @@ const Business = () => {
                     </h2>
 
                     {/* big screens */}
-                    <div className={`sm:flex flex-col hidden w-full my-5`}>
+                    <div className={`sm:flex flex-col hidden w-full ${styles.marginY}`}>
 
                         {/* head */}
                         <div className={`flex flex-row w-full ${styles.flexCenter}`}>
@@ -133,7 +136,7 @@ const Business = () => {
                         </div>
 
                         {/* icons */}
-                        <div className={`flex flex-row w-full ${styles.flexCenter} my-10`}>
+                        <div className={`flex flex-row w-full ${styles.flexCenter} ${styles.marginY}`}>
                             <div className={`${styles.flexCenter} flex-1 flex self-center`}>
                                 <div className={`w-[128px] h-[128px] rounded-full ${styles.flexCenter} bg-blue-gradient aspect-square`}>
                                     <img src={business} alt="kostrjanc Business programm Icon" className={`w-[50%] h-[50%] object-contain ${styles.iconAnimation}`} />
@@ -148,7 +151,7 @@ const Business = () => {
 
                         {/* p's */}
                         <div className={`flex flex-row w-full ${styles.flexStart}`}>
-                            <p className={`${styles.paragraph} px-5 w-full flex-1 flex `}>
+                            <div className={`${styles.paragraph} px-5 w-full flex-1 flex-col`}>
                                 {
                                     getCurrentLang() == "sb" ?
                                         <p>
@@ -158,8 +161,10 @@ const Business = () => {
                                         </p> :
                                         "serdfaiuhojmwedrjouimipwekod,rü"
                                 }
-                            </p>
-                            <p className={`${styles.paragraph} px-5 w-full flex-1 flex`}>
+                                <LinkToFormular styles="mt-10" section="business"
+                                    text={getCurrentLang() === "sb" ? "Za Business program so přizjewić" : "Für Business Programm anmelden"} />
+                            </div>
+                            <div className={`${styles.paragraph} px-5 w-full flex-1 flex-col`}>
                                 {
                                     getCurrentLang() == "sb" ?
                                         <div>
@@ -177,16 +182,18 @@ const Business = () => {
                                             Jeli trěbne dypki spjeliš, pisaj nam jednu email na <a href="mailto:info@kostrjanc.de" className="text-gradient">info@kostrjanc.de</a>,
                                             a napisaj do titula "werifikacija". Prošu podaj twoje mjeno a dźeń naroda.
                                         </div> :
-                                        "serdfaiuhojmwedrjouimipwekod,rü"
+                                        "serdfaiuhojmwedrjouimipwekod,rürfe dewji9"
                                 }
-                            </p>
+                                <LinkToFormular styles="mt-10" section="werifikacija"
+                                    text={getCurrentLang() === "sb" ? "Za werifikaciju so přizjewić" : "Für Verifikation anmelden"} />
+                            </div>
                         </div>
                     </div>
 
                     {/* small screens */}
-                    <div className="sm:hidden flex flex-col w-full my-5">
+                    <div className={`sm:hidden flex flex-col w-full ${styles.marginY}`}>
 
-                        <div className={`my-5 w-full flex flex-col`}>
+                        <div className={`my-10 w-full flex flex-col`}>
                             <h2 className={`font-barlow font-semibold text-center xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white text-center w-full`}>
                                 {
                                     getCurrentLang() === "sb" ?
@@ -195,13 +202,13 @@ const Business = () => {
                                 }
                             </h2>
 
-                            <div className={`${styles.flexCenter} my-5 flex-1 flex self-center`}>
+                            <div className={`${styles.flexCenter} my-10 flex-1 flex self-center`}>
                                 <div className={`w-[128px] h-[128px] rounded-full ${styles.flexCenter} bg-blue-gradient aspect-square`}>
                                     <img src={business} alt="kostrjanc Business programm Icon" className={`w-[50%] h-[50%] object-contain ${styles.iconAnimation}`} />
                                 </div>
                             </div>
 
-                            <p className={`${styles.paragraph} w-full self-center flex-1 flex max-w-[720px]`}>
+                            <div className={`${styles.paragraph} w-full self-center flex-1 flex-col max-w-[720px]`}>
                                 {
                                     getCurrentLang() == "sb" ?
                                         <p>
@@ -211,10 +218,12 @@ const Business = () => {
                                         </p> :
                                         "serdfaiuhojmwedrjouimipwekod,rü"
                                 }
-                            </p>
+                                <LinkToFormular styles="mt-5" section="business"
+                                    text={getCurrentLang() === "sb" ? "Za Business program so přizjewić" : "Für Business Programm anmelden"} />
+                            </div>
                         </div>
 
-                        <div className={`my-5 w-full flex flex-col`}>
+                        <div className={`mb-10 w-full flex flex-col`}>
                             <h2 className={`font-barlow font-semibold text-center xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white text-center w-full`}>
                                 {
                                     getCurrentLang() === "sb" ?
@@ -223,13 +232,13 @@ const Business = () => {
                                 }
                             </h2>
 
-                            <div className={`${styles.flexCenter} my-5 flex-1 flex self-center`}>
+                            <div className={`${styles.flexCenter} my-10 flex-1 flex self-center`}>
                                 <div className={`w-[128px] h-[128px] rounded-full ${styles.flexCenter} bg-blue-gradient aspect-square`}>
                                     <img src={verify} alt="Verify Icon" className={`w-[50%] h-[50%] object-contain ${styles.iconAnimation}`} />
                                 </div>
                             </div>
 
-                            <p className={`${styles.paragraph} w-full self-center flex-1 flex max-w-[720px]`}>
+                            <div className={`${styles.paragraph} w-full self-center flex-1 flex-col max-w-[720px]`}>
                                 {
                                     getCurrentLang() == "sb" ?
                                         <div>
@@ -249,7 +258,9 @@ const Business = () => {
                                         </div> :
                                         "serdfaiuhojmwedrjouimipwekod,rü"
                                 }
-                            </p>
+                                <LinkToFormular styles="mt-5" section="werifikacija"
+                                    text={getCurrentLang() === "sb" ? "Za werifikaciju so přizjewić" : "Für Verifikation anmelden"} />
+                            </div>
                         </div>
 
 
@@ -266,7 +277,7 @@ const Business = () => {
                         }
                     </h2>
 
-                    <p className={`${styles.paragraph} max-w-[720px]`}>
+                    <div className={`${styles.paragraph} max-w-[720px]`}>
                         {
                             getCurrentLang() == "sb" ?
                                 <p>
@@ -278,7 +289,7 @@ const Business = () => {
                                 </p> :
                                 "serdfaiuhojmwedrjouimipwekod,rü"
                         }
-                    </p>
+                    </div>
                 </div>
 
                 {/* new ad */}
@@ -291,7 +302,7 @@ const Business = () => {
                         }
                     </h2>
 
-                    <p className={`${styles.paragraph} max-w-[720px]`}>
+                    <div className={`${styles.paragraph} max-w-[720px]`}>
                         {
                             getCurrentLang() == "sb" ?
                                 <p>
@@ -303,7 +314,7 @@ const Business = () => {
                                 </p> :
                                 "serdfaiuhojmwedrjouimipwekod,rü"
                         }
-                    </p>
+                    </div>
                 </div>
 
             </div>

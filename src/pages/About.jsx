@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 const About = () => {
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         document.title = getCurrentLang() === "sb" ? "kostrjanc - Štó my smy" : "kostrjanc - Wer wir sind";
     }, []);
 

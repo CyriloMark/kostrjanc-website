@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import styles from "../style";
 
@@ -13,12 +13,16 @@ import Footer from "../components/Footer";
 
 const Start = () => {
 
+    const [release, setRelease] = useState(Date.now());
+
     useEffect(() => {
+        window.scrollTo(0, 0);
         document.title = "kostrjanc - Start";
+        fetch("https://kostrjanc-default-rtdb.europe-west1.firebasedatabase.app/release_date.json").then(res => res.json().then(val => setRelease(val)))
     }, []);
 
     return (
-        <div onLoad={() => window.scrollTo(0, 0)} className={`bg-primary ${styles.flexCenterVert} flex-col w-full`}>
+        <div className={`bg-primary ${styles.flexCenterVert} flex-col w-full`}>
             <div className={`${styles.boxWidth}`}>
                 <Hero />
             </div>
@@ -26,9 +30,9 @@ const Start = () => {
             <div className={`${styles.paddingX} ${styles.flexCenterVert} w-full flex-col`}>
                 <Stats />
                 <Info />
-                <Install />
+                <Install releaseDate={release} />
                 <Business />
-                <Countdown />
+                <Countdown releaseDate={release} />
                 <Help />
                 <Footer />
             </div>

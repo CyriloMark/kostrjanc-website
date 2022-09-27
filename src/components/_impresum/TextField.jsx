@@ -28,10 +28,10 @@ const TextField = () => {
                     <h2 className={styles.heading2}>Hast du ein besonderes Anliegen?<br className="md:block hidden" />
                         Schreib deine Nachricht gleich hier!</h2>
             }
-            <div className="flex-col flex-1 mt-5">
-                <InputField st="my-2 w-full" onChange={(val) => setMessage({ ...message, subject: val })} placeholder={getCurrentLang() === "sb" ? "Zapodaj twój tema naležnosće" : "Gib dein Betreff an"} />
-                <InputField st="my-2 w-full" onChange={(val) => setMessage({ ...message, text: val })} multiline placeholder={getCurrentLang() === "sb" ? "Zapodaj twoju powěsć" : "Gib deine Nachricht ein"} />
-                <Button onClick={send} styles="mt-5" text={getCurrentLang() === "sb" ? "Wotpósłać" : "Abschicken"} />
+            <div className={`flex-col flex-1 ${styles.marginY}`}>
+                <InputField st="mb-5 w-full" onChange={(val) => setMessage({ ...message, subject: val })} placeholder={getCurrentLang() === "sb" ? "Zapodaj twój tema naležnosće" : "Gib dein Betreff an"} />
+                <InputField st="w-full" onChange={(val) => setMessage({ ...message, text: val })} multiline placeholder={getCurrentLang() === "sb" ? "Zapodaj twoju powěsć" : "Gib deine Nachricht ein"} />
+                <Button onClick={send} styles="mt-10" text={getCurrentLang() === "sb" ? "Wotpósłać" : "Abschicken"} />
             </div>
         </section>
     );

@@ -8,12 +8,14 @@ import { privacySections } from "../constants/privacy";
 import { Footer } from "../components";
 
 const AgbLegal = () => {
+
     useEffect(() => {
+        window.scrollTo(0, 0);
         document.title = getCurrentLang() === "sb" ? "kostrjanc - Škit datow / Prawniske" : "kostrjanc - Datenschutz / Rechliches";
     }, []);
 
     return (
-        <div onLoad={() => window.scrollTo(0, 0)} className={`bg-primary ${styles.flexCenterVert} flex-col w-full`}>
+        <div className={`bg-primary ${styles.flexCenterVert} flex-col w-full`}>
 
             <div className={`z-[5] flex flex-col ${styles.padding} ${styles.boxWidth}`}>
                 <h1 className={`flex-1 font-barlow font-semibold ss:text-[72px] text-[52px] text-gradient ss:leading-[100.8px] leading-[75px] text-center`}>

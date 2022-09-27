@@ -28,7 +28,7 @@ function ListElement(contact: { cont: Contact }) {
     )
 }
 
-const Contactlist = () => {
+const ContactList = () => {
     return (
         <section id="list" className={`flex flex-col ${styles.boxWidth}`}>
             <div className={`z-[5] flex w-full flex-row flex-wrap`}>
@@ -42,4 +42,4 @@ const Contactlist = () => {
     );
 }
 
-export default Contactlist;
+export default ContactList;

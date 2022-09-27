@@ -7,6 +7,12 @@ import verify from "./verify.svg";
 import ad from "./ad.svg";
 import stonks from "./stonks.svg";
 import business from "./business.svg";
+import ban from "./ban.svg";
+import empty from "./empty.svg";
+import help from "./help.svg";
+import star from "./star.svg";
+import bugs from "./bugs.svg";
+import corona from "./corona.svg";
 
 export {
   menu,
@@ -17,5 +23,11 @@ export {
   verify,
   ad,
   stonks,
-  business
+  business,
+  ban,
+  empty,
+  help,
+  star,
+  bugs,
+  corona
 };

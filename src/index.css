@@ -27,7 +27,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .bg-blue-gradient {
@@ -62,6 +61,10 @@
 
 .bg-discount-gradient {
   background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.bg-red-gradient {
+  background: linear-gradient(90deg, #B06E6A 0%, #aa524d 100%);
 }
 
 .box-shadow {

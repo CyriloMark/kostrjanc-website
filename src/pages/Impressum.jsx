@@ -8,16 +8,19 @@ import { impresumElements } from "../constants/impresum";
 import { Button } from "../components";
 import SectionElement from "../components/_impresum/SectionElement";
 
+import { LinkToFormular } from "./Formular";
+
 import { Footer } from "../components";
 
 const Impressum = () => {
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         document.title = getCurrentLang() === "sb" ? "kostrjanc - Impresum" : "kostrjanc - Impressum";
     }, []);
 
     return (
-        <div onLoad={() => window.scrollTo(0, 0)} className={`bg-primary ${styles.flexCenterVert} flex-col w-full`}>
+        <div className={`bg-primary ${styles.flexCenterVert} flex-col w-full`}>
 
             <div className={`z-[5] flex flex-col ${styles.padding} ${styles.boxWidth}`}>
                 <h1 className={`flex-1 font-barlow font-semibold ss:text-[72px] text-[52px] text-gradient ss:leading-[100.8px] leading-[75px] text-center`}>
@@ -61,7 +64,8 @@ const Impressum = () => {
                     <h2 className={styles.paragraph}>Dalše informacije wo škiće datow a dalšich prawniskich temow:</h2>
                     <div className="w-full flex-row flex mt-10">
                         <Button styles={`mr-5`} text="Škit datow" link to="/impresum/skitdatow" />
-                        <Button text="Kontakt" link to="/impresum/kontakt" />
+                        <Button styles={`mr-5`} text="Kontakt" link to="/impresum/kontakt" />
+                        <LinkToFormular text={getCurrentLang() === "sb" ? "Naš formular za wšo" : "Unser Formular für alles"} />
                     </div>
                 </div>
 

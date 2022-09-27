@@ -12,7 +12,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
             <h4 className="font-barlow font-semibold text-white text-[18px] leading-[23.4px] mb-1">
                 {title}
             </h4>
-            <p className="font-roboto_mono font-normal text-dimWhite text-[16px] leading-[24px]">
+            <p className="font-roboto_mono font-normal text-dimWhite text-[16px] leading-[24px] max-w-[720px]">
                 {content}
             </p>
         </div>
@@ -29,7 +29,7 @@ const Business = () => {
                         <h2 className={styles.heading2}>Du willst unserem <br className="md:block hidden" /><span className="text-gradient">Business</span> betreten?</h2>
                 }
 
-                <div className={`flex-1 flex ${styles.flexCenter} mt-10 relative flex-col`}>
+                <div className={`flex-1 flex ${styles.flexCenter} ${styles.marginY} relative flex-col`}>
                     {
                         business_features.map((feature, index) => (
                             <FeatureCard key={feature.id} icon={feature.icon}
@@ -40,7 +40,7 @@ const Business = () => {
                     }
                 </div>
 
-                <Button styles={`mt-10`} text={getCurrentLang() === "sb" ? "Nětko přistupić" : "Jetzt betreten"} link to={"/business"} />
+                <Button text={getCurrentLang() === "sb" ? "Nětko přistupić" : "Jetzt betreten"} link to={"/business"} />
             </div>
 
 

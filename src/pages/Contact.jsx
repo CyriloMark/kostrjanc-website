@@ -2,33 +2,26 @@ import { useEffect } from "react";
 
 import styles from "../style";
 
-import { getCurrentLang } from "../constants";
-
-import Contactlist from "../components/_impresum/ContactList";
+import ContactList from "../components/_impresum/ContactList";
 import TextField from "../components/_impresum/TextField";
 import { Footer } from "../components";
 
 const Contact = () => {
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         document.title = "kostrjanc - Kontakt";
     }, []);
 
     return (
-        <div onLoad={() => window.scrollTo(0, 0)} className={`bg-primary ${styles.flexCenterVert} flex-col w-full`}>
+        <div className={`bg-primary ${styles.flexCenterVert} flex-col w-full`}>
 
             <div className={`z-[5] flex flex-col ${styles.padding} ${styles.boxWidth}`}>
-                <h1 className={`flex-1 font-barlow font-semibold ss:text-[72px] text-[52px] text-gradient ss:leading-[100.8px] leading-[75px] text-center`}>
-                    {
-                        getCurrentLang() === "sb" ?
-                            "Kontakty" :
-                            "Kontakt"
-                    }
-                </h1>
+                <h1 className={`flex-1 font-barlow font-semibold ss:text-[72px] text-[52px] text-gradient ss:leading-[100.8px] leading-[75px] text-center`}>Kontakt</h1>
             </div>
 
             <div className={`z-[5] ${styles.paddingX} ${styles.flexCenterVert} ${styles.boxWidth} flex-col`}>
-                <Contactlist />
+                <ContactList />
                 <TextField />
                 <Footer />
             </div>

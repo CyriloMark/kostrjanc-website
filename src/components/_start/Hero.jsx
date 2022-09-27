@@ -6,10 +6,10 @@ import { getCurrentLang } from "../../constants";
 const Hero = () => {
     return (
         <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-            <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+            <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-10 px-5`}>
 
-                <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-                    <p className={`${styles.paragraph} ml-2`}>
+                <div className="flex flex-row items-center py-2 px-4 bg-discount-gradient rounded-[10px] mb-5">
+                    <p className={`${styles.paragraph}`}>
                         {
                             getCurrentLang() === "sb" ?
                                 "1. Serbski Social Media" :
@@ -24,7 +24,7 @@ const Hero = () => {
                         <span className="text-gradient">kostrjanc.</span>
                     </h1>
                 </div>
-                <p className={`${styles.paragraph} max-w-[720px] mt-5`}>
+                <p className={`${styles.paragraph} max-w-[720px] mt-10`}>
                     {
                         getCurrentLang() === "sb" ?
                             "Cyril Mark a Korla Baier mějachu ideju, social media aplikaciju za serbski lud stworić. Hobby za programěrowanje a design aplikacijow mějachu hólcaj hižo. Tak stworištaj hólcy w běhu pół lěta aplikaciju a přidatne online-słužby." :

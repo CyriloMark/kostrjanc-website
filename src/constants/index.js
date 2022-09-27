@@ -1,5 +1,3 @@
-export const releaseDate = "2022 11 11 11:11:00";
-
 export const navLinks = [
   {
     id: "start",
@@ -43,39 +41,34 @@ export const langs = [
 
 export const stats = [
   {
-    id: "stats-1",
+    id: "users",
     title: "Wužiwarjow",
     title_de: "Benutzer",
-    value: "1000+",
-  },
-  {
-    id: "stats-2",
-    title: "Downloads",
-    title_de: "Downloads",
-    value: "230+",
-  },
-  {
-    id: "stats-3",
-    title: "Wužiwarjow/dźeń",
-    title_de: "Bunuter/Tag",
-    value: "95+",
+    value: 0,
   },
   {
     id: "posts",
-    title: "posts",
+    title: "Posty",
     title_de: "Posts",
-    value: "51646"
-  }
+    value: 0
+  },
+  {
+    id: "events",
+    title: "Ewenty",
+    title_de: "Events",
+    value: 0
+  },
 ];
 
-import { business, ad, verify } from "../assets/";
+import { business, ad, verify, ban, empty, star, bugs, corona } from "../assets/";
+
 export const business_features = [
   {
     id: "feature-0",
     icon: business,
     title: "kostrjanc Business program",
     title_de: "kostrjanc Business Programm",
-    content: "s",
+    content: "Z našim Business programom maš móžnosć, wabjenja šaltować, a precizne posty a ewenty wozbjewić, ale so tež werifikować dać.",
     content_de: "s"
   },
   {
@@ -91,8 +84,8 @@ export const business_features = [
     icon: ad,
     title: "W kostrjanc wabić",
     title_de: "Mit kostrjanc werben",
-    content: "Ty sy předewzaćer a chceš na kostrjanc wabić? Wužij chancu, my Was rady podpěramy.",
-    content_de: "Du bist Unternehmer und willst auf kostrjanc deine Werbung schalten. Nutz deine Chance, wir helfen Ihnen gerne."
+    content: "Ty sy předewzaćer a chceš na kostrjanc wabić? Wužij chancu, my tebje rady podpěramy.",
+    content_de: "Du bist Unternehmer und willst auf kostrjanc deine Werbung schalten. Nutz deine Chance, wir helfen dir gerne."
   },
 ];
 
@@ -182,3 +175,42 @@ export const getPersistantAttributes = () => {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.toString();
 }
+
+export const formularSections = [
+  {
+    id: "business",
+    title: "Požadanje za kostrjanc Business program",
+    title_de: "Bewerung für das kostrjanc Business Programm",
+    icon: business
+  },
+  {
+    id: "werifikacija",
+    title: "Požadanje za werifikowanje",
+    title_de: "Bewerung für die Verifikation",
+    icon: verify
+  },
+  {
+    id: "ban",
+    title: "Njesprany ban",
+    title_de: "Ungerechter Bann",
+    icon: ban
+  },
+  {
+    id: "hack",
+    title: "Hakowany konto abo žadyn přistup na jón",
+    title_de: "Gehackter Account oder kein Zugriff mehr",
+    icon: corona
+  },
+  {
+    id: "bugs",
+    title: "Formular za přizjewjenje zmylkow abo problemow",
+    title_de: "Formular zu Meldung von Fehlern und Problemen",
+    icon: bugs
+  },
+  {
+    id: "feedback",
+    title: "Formular za recenziju abo feedback. My so wjeselimy přez kóždoho!",
+    title_de: "Formular für Rezensionen oder Feedback. Wir freuen uns über jeden Einzelnen!",
+    icon: star
+  },
+]
