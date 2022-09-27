@@ -144,14 +144,4 @@ export const faq = [
                 <Button styles="mt-5" text={getCurrentLang() === "sb" ? "Impresum" : "Impressum"} to="/impresum" link />
             </div>,
     },
-    {
-        title: "P: Kak móžu sej kostrjanc app instalować?",
-        title_de: "F: Wie kann ich mir die kostrjanc App herunterladen?",
-        answer:
-            <div className={classes.container}>
-                <div className={`${styles.padding} bg-black-gradient w-full rounded-[20px]`}>
-                    <Install />
-                </div>
-            </div>,
-    },
 ]
