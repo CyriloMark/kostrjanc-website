@@ -8,15 +8,4 @@ import Formular from "./Formular";
 import Contact from "./Contact";
 import AgbLegal from "./AgbLegal";
 
-export {
-    Start,
-    About,
-    Business,
-    Help,
-    
-    Impressum,
-    Contact,
-    Formular, 
-    AgbLegal
-}
-
+export { Start, About, Business, Help, Impressum, Contact, Formular, AgbLegal };
