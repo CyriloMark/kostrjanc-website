@@ -2,7 +2,7 @@ import styles from './style';
 
 import { Navbar } from "./components";
 
-import { Start, Help, Business, About, Impressum, Contact, AgbLegal, Formular } from "./pages";
+import { Start, Help, Business, About, Impressum, Contact, AgbLegal, Formular, Error } from "./pages";
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -25,6 +25,8 @@ const App = () => {
                     <Route path="/impresum" element={<Impressum />} />
                     <Route path="/impresum/kontakt" element={<Contact />} />
                     <Route path="/impresum/skitdatow" element={<AgbLegal />} />
+
+                    <Route path="*" element={<Error />} />
                 </Routes>
             </div>
         </BrowserRouter>

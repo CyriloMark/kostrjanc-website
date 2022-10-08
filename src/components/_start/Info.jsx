@@ -32,15 +32,15 @@ const Info = () => (
                         Zaměr wot <span className="text-gradient">kostrjanc</span> je tworjenje serbskeho digitalneho ruma.
                         Z <span className="text-gradient">kostrjanc</span> móža so wobrazy a ewenty we wobrawdźitym času mjez wužiwarjemi dźělić.
                         {" "}<span className="text-gradient">Kostrjanc</span> je platforma, myslena za młody a starši serbski lud,
-                        zo by so po digitalnym, ryzy serbskim puću zabawjało. Jeli chceš nas dale zeznać sćěhuj linkej: <Link to="/about"><span className="text-gradient">Štó my smy</span></Link>
+                        zo by so po digitalnym, ryzy serbskim puću zabawjało. Jeli chceš nas dale zeznać sćěhuj linkej: <Link to="/stomysmy?"><span className="text-gradient">Štó my smy</span></Link>
                     </p> :
-                    <p className={`${styles.paragraph} max-w-[720px] mt-5`}>
+                    <p className={`${styles.paragraph} max-w-[720px] ${styles.marginY}`}>
                         Sorbische Sozial Media Plattform <span className="text-gradient">kostrjanc</span> ist ein Projekt von Cyril Mark und Korla Baier.
                         Das Ziel von <span className="text-gradient">kostrjanc</span> ist das Bilden eines sorbischen digitalen Raum.
                         Mit <span className="text-gradient">kostrjanc</span> kann man Bilder und Events in echtzeit zwischen Benutzern teilen.
                         {" "}<span className="text-gradient">Kostrjanc</span> ist eine Plattform, gemacht für das junge und ältere sorbische Volk,
                         damit man auf digitalem, rein sorbischem Weg sich austauschen kann. Falls du mehr erfahren möchtest, dann folge dem Link:
-                        {" "}<Link to={"/about?" + getPersistantAttributes()}><span className="text-gradient">Wer wir sind</span></Link>
+                        {" "}<Link to={"/stomysmy?" + getPersistantAttributes()}><span className="text-gradient">Wer wir sind</span></Link>
                     </p>
             }
 

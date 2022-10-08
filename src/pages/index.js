@@ -8,6 +8,8 @@ import Formular from "./Formular";
 import Contact from "./Contact";
 import AgbLegal from "./AgbLegal";
 
+import Error from "./Error";
+
 export {
     Start,
     About,
@@ -17,6 +19,8 @@ export {
     Impressum,
     Contact,
     Formular, 
-    AgbLegal
+    AgbLegal,
+
+    Error
 }
 
