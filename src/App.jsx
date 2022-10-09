@@ -13,11 +13,12 @@ import {
   Formular,
 } from "./pages";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
+import Drawing from "./pages/Drawing";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="bg-primary w-full overflow-hidden">
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
           <Navbar />
@@ -33,9 +34,11 @@ const App = () => {
           <Route path="/impresum" element={<Impressum />} />
           <Route path="/impresum/kontakt" element={<Contact />} />
           <Route path="/impresum/skitdatow" element={<AgbLegal />} />
+
+          <Route path="/wobraz" element={<Drawing />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

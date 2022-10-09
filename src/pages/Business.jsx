@@ -47,19 +47,30 @@ const Business = () => {
               {getCurrentLang() === "sb" ? (
                 <p>
                   Z kostrjanc Business programom móžeće Wy na kostrjanc wabjenje
-                  šaltować. Z kostrjanc wabenjom móžeće Wy wjace ludźom waše
+                  šaltować. Z kostrjanc wabjenjom móžeće Wy wjace ludźom waše
                   posty a ewenty pokazać a tak wjace ludźi z wašimi powěsćemi
                   docpěć.
                   <br />
                   Tohorunja wobsteju tu móžnosć, zo móžeće so werifikować dać.
                   To nima ničo z wabjenjami činić. Hdyž so Wy jenož za
-                  werifikaciju zajimujeće, stłóće tu:{" "}
+                  werifikaciju zajimujeće, stłóčće tu:{" "}
                   <a href="#verify" className="text-gradient">
                     Werifikacija
                   </a>
                 </p>
               ) : (
-                "Mit dem kostrjanc Business Programm können Sie auf kostrjanc Werbung schalten. Mit kostrjanc Werbungen können Sie mehr Benutzern Ihre Posts und Events zeigen und somit mehr Menschen mit ihren Nachrichten erreichen."
+                <p>
+                  Mit dem kostrjanc Buisness Programm können Sie auf kostrjanc
+                  Werbung schalten. Mit kostrjanc-Werbung können mehr Menschen
+                  eure Posts und Events sehen und so können Sie mehr Menschen
+                  mit ihren Nachrichten erreichen. Ebenfalls bestehe ich die
+                  Möglichkeit, dass Sie sich verifizieren lassen können. Das hat
+                  nichts mit Werbung zu tun. Wenn Sie sich nur für die
+                  Verifizierung interessieren, drücken Sie hier:{" "}
+                  <a href="#verify" className="text-gradient">
+                    Verifikation
+                  </a>
+                </p>
               )}
             </div>
           </div>
@@ -104,7 +115,14 @@ const Business = () => {
                   zajimuja.
                 </p>
               ) : (
-                "serdfaiuhojmwedrjouimipwekod,rü"
+                <p>
+                  Werbung auf kostrjanc ist einfach ein Post oder ein Event.
+                  Wenn sich ein Nutzer Posts auf kostrjanc ansieht, sieht er
+                  manchmal eine Werbung. Diese Werbung kann dann euer Post oder
+                  Event sein. Sie haben auch die Möglichkeit eure Werbung
+                  auszurichten, so wird eure Werbung nur Nutzern angezeigt die
+                  sich für eure Werbungen interessieren.{" "}
+                </p>
               )}
             </div>
           </div>
@@ -203,7 +221,18 @@ const Business = () => {
                     , a potom my wam wšitko rozkładźemy.
                   </p>
                 ) : (
-                  "serdfaiuhojmwedrjouimipwekod,rü"
+                  <p>
+                    Falls Sie ein Mitglied vom kostrjanc Buisness Programm
+                    werden möchten, geht das ganz einfach. Schreiben Sie uns
+                    einfach eine Email an{" "}
+                    <a
+                      href="mailto:info@kostrjanc.de"
+                      className="text-gradient"
+                    >
+                      info@kostrjanc.de
+                    </a>
+                    , und dann erklähren wir ihnen alles.
+                  </p>
                 )}
                 <LinkToFormular
                   styles="mt-10"
@@ -227,7 +256,7 @@ const Business = () => {
                     app. Werifikowani wužiwarjo namakaja w app wosebity symbol
                     na jich profilu.
                     <br />
-                    Zo móžeš twój konto werifikować, dyrbiš slědowace kriterie
+                    Zo móžeš twój konto werifikować, dyrbiš slědowace kriterije
                     spjelnić:
                     <ul className="list-disc w-full px-5 my-2">
                       <li>staroba wot 18 lět</li>
@@ -258,7 +287,47 @@ const Business = () => {
                     mjeno a dźeń naroda.
                   </div>
                 ) : (
-                  "serdfaiuhojmwedrjouimipwekod,rürfe dewji9"
+                  <div>
+                    Die Verifizkation ist eine besondere Form unseres Business
+                    Programms. Als verifizierte Person erhält man die
+                    Möglichkeit, für kostrjanc besondere Aufgaben zu erfüllen.
+                    Ebenfalls hast du die Möglichkeit, auf kostrjanc
+                    mitzubestimmen und hast besondere Rechte für das Agieren in
+                    unserer App. Verifizierte Nutzer finden in der App ein
+                    besonderes Symbol auf ihrem Profil.
+                    <br />
+                    Damit du dein Konto verifizieren kannst, musst du folgende
+                    Kriterien erfüllen::
+                    <ul className="list-disc w-full px-5 my-2">
+                      <li>Alter von mindestens 18 Jahren</li>
+                      <li>
+                        du hast einen besonderen Bezug zu kostrjanc oder du hast
+                        einen besonderen Status in der Gesellschaft
+                      </li>
+                      <li>
+                        du verwendest kostrjanc regulär und beachtest die Regeln
+                        für die Verwendung
+                      </li>
+                      <li>
+                        man hält sich an Moralnormenen und akzeptiert Rechte und
+                        Regeln in und außerhalb von kostrjanc
+                      </li>
+                      <li>
+                        man akzeptiert in und außerhalb den Kornbaum jeden
+                        Mitmenschen
+                      </li>
+                    </ul>
+                    Wenn du die nötigen Punkte erfüllst, schreib uns eine Email
+                    an{" "}
+                    <a
+                      href="mailto:info@kostrjanc.de"
+                      className="text-gradient"
+                    >
+                      info@kostrjanc.de
+                    </a>
+                    , und schreib in den Titel "Verifizierung". Bitte gib deinen
+                    Namen und Tag der Geburt an.
+                  </div>
                 )}
                 <LinkToFormular
                   styles="mt-10"
@@ -266,7 +335,7 @@ const Business = () => {
                   text={
                     getCurrentLang() === "sb"
                       ? "Za werifikaciju so přizjewić"
-                      : "Für Verifikation anmelden"
+                      : "Zur Verifikation anmelden"
                   }
                 />
               </div>
@@ -315,7 +384,18 @@ const Business = () => {
                     , a potom my wam wšitko rozkładźemy.
                   </p>
                 ) : (
-                  "serdfaiuhojmwedrjouimipwekod,rü"
+                  <p>
+                    Falls Sie ein Mitglied vom kostrjanc Buisness Programm
+                    werden möchten, geht das ganz einfach. Schreiben Sie uns
+                    einfach eine Email an{" "}
+                    <a
+                      href="mailto:info@kostrjanc.de"
+                      className="text-gradient"
+                    >
+                      info@kostrjanc.de
+                    </a>
+                    , und dann erklähren wir ihnen alles.
+                  </p>
                 )}
                 <LinkToFormular
                   styles="mt-5"
@@ -440,7 +520,27 @@ const Business = () => {
                 Widźiće tež kak drohe waše wabjenje tutón měsac budźe.
               </p>
             ) : (
-              "serdfaiuhojmwedrjouimipwekod,rü"
+              <p>
+                Auf dem kostrjanc Buisness dashboard können sie Werbungen
+                veröffentlichen, Sie können sich ihre bereits veröffentlichten
+                Werbungen anschauen, sowie ihre aktuelen Kosten. Wenn ihr
+                Account auf einen Buisness Account umgewandelt wurde könne sie
+                sich unter{" "}
+                <a
+                  href="https://dashboard.kostrjanc.de/"
+                  className="text-gradient"
+                >
+                  dashboard.kostrjanc.de
+                </a>{" "}
+                mit ihrem Account einloggen. Dafür werden sie das selbe
+                Password, sowie die selbe Email wie in der kostrjanc app. Oben
+                rechts können sich verschiedene Seiten aufwählen.
+                <br />
+                Auf dem Dashboard können Sie alle bereits von ihnen
+                veröffentlichten Werbungen sehen. Sie können sehen, wie oft
+                diese angesehen wurden. Sie können auch sehen wie viel Ihnen
+                jede Werbung pro Monat kostet.
+              </p>
             )}
           </div>
         </div>
@@ -449,8 +549,8 @@ const Business = () => {
         <div className={`${styles.paddingY} flex flex-col`}>
           <h2 className={`mb-5 ${styles.heading2} max-w-[980px]`}>
             {getCurrentLang() === "sb"
-              ? "Nowe wabjenje"
-              : "Wie funktionert kostrjanc Werbung?"}
+              ? "Nowe wabjenje wozjewić"
+              : "Neue Werbung veröffentlichen"}
           </h2>
 
           <div className={`${styles.paragraph} max-w-[720px]`}>
@@ -460,14 +560,26 @@ const Business = () => {
                 chceće wabjenje wozjewić, dyrbiće jako prěnje wuzwolić hač ma so
                 post abo ewent pokazać. Potom wuzwolće kotry post abo ewent so
                 pokazać ma. Jako přichodnje móžeće opcije za wusměrjene wabenje
-                zaswě.
+                zaswěćić.
                 <br />
                 Na kóncu měsaca so wam přeco jedna zličbowanka pósła. Zapłaćiće
                 5ct přeco hdyž so waše wabjenje wobhlada. Na kóncu měsaca
                 płaćiće jenož tak wjele, kaž so waše wabjenje wobhlada.
               </p>
             ) : (
-              "serdfaiuhojmwedrjouimipwekod,rü"
+              <p>
+                Auf der Seite "Neue Werbung" können Sie neue Werbungen
+                veröffentlichen. Wenn sie eine Werbung veröffentlichen wollen,
+                müssen sie zuerst auswählen ob ein Post oder Ewent gezeigt
+                werden. Danach wählen sie welcher Post oder wechles Ewent
+                gezeigt werden soll. Als nächsten können Sie die Optionen für
+                ausgerichtete Werbung aktivieren.
+                <br />
+                Am Ende des Monats wird ihnen immer eine Rechnugn geschickt.
+                Wenn sich jemand ihre Werbung ansieht kostet das 5ct. Am Ende
+                des Monats zahlen sie nur so viel, wie ihre Werbung angezeigt
+                wird.
+              </p>
             )}
           </div>
         </div>

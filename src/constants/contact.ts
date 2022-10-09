@@ -17,7 +17,7 @@ export const contacts: Contact[] = [
   {
     id: "korlabaier",
     name: "Baier, Korla",
-    tel: "+49 xyz 187420",
+    tel: "+49 1522 6832972",
     adress: ["Mittelweg 12", "01920 Panschwitz-Kukau", "Saxony, Germany"],
     email: "korla.baier@gmx.de",
   },

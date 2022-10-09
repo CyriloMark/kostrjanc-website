@@ -14,15 +14,15 @@ const classes = {
 
 export const faq = [
   {
-    title: "P: Chcu na kostrjanc wabjenje šaltować",
-    title_de: "F: Ich möchte auf kostrjanc Werbung schalten",
+    title: "P: Chcu na kostrjanc wabjenje šaltować.",
+    title_de: "F: Ich möchte auf kostrjanc Werbung schalten.",
     answer: (
       <div className={classes.container}>
         <p className={classes.st}>{getCurrentLang() === "sb" ? "W:" : "A:"}</p>
         <p className={`${classes.p} mb-5`}>
           {getCurrentLang() === "sb"
             ? "My so za waš zajim za kostrjanc wabjenje jara wjeselimy, dokelž nam wabjenje pomha projekt kostrjanc dale běžeć dać. Hdyž wy na kostrjanc wabiće njepomhaće jenož nam, ale móžeće z tym nowych kupcow namakać."
-            : "Wir freuen uns über euer Interesse an kostrjanc Werbung sehr, weil uns Werbung hilft das Projekt kostrjanc weiter laufen zu lassen. Wenn ihr auf kostrjanc Werbung šaltet hilft ihr nicht nur uns, sondern könnt damit neue Kunden gewinnen."}
+            : "Wir freuen uns über Ihre Interesse an kostrjanc Werbung sehr, weil uns Werbung hilft das Projekt kostrjanc weiter laufen zu lassen. Wenn Sie auf kostrjanc Werbung šalteten hilfen sie nicht nur uns, sondern Sie können auch neue Kunden gewinnen."}
         </p>
         <p className={classes.st}>
           {getCurrentLang() === "sb"
@@ -32,12 +32,12 @@ export const faq = [
         <p className={`${classes.p} mb-5`}>
           {getCurrentLang() === "sb"
             ? "Hdyž wužiwarjo kostrjanc wužiwaja, woni druhdy jedne wabjenje widźa. Tute je připadne. Hdyž so jedne wabjenje pokaza płaći to 5 centow."
-            : "Wenn Nutzer kostrjanc verwenden, sehen sie manchmal Werbung. Diese Werbung ist zufällig. Wenn sich eine Werbung anzeigt kostet das 5 Cent."}
+            : "Wenn Nutzer kostrjanc verwenden, sehen sie manchmal Werbung. Diese Werbung ist zufällig. Wenn eine Werbung anzeigt wird kostet das 5 Cent."}
         </p>
         <p className={classes.st}>
           {getCurrentLang() === "sb"
             ? "Maće zajim na kostrjanc wabjenju?"
-            : "Hab Ihr Interesse am Schalten von Werbung in kostrjanc?"}
+            : "Haben Sie Interesse am Schalten von Werbung in kostrjanc?"}
         </p>
         <p className={classes.p}>
           {getCurrentLang() === "sb" ? (
@@ -61,7 +61,7 @@ export const faq = [
               <a href="https://www.kostrjanc.de/business" className={classes.a}>
                 link.
               </a>{" "}
-              Falls Sie noch Fragen waben, können sie uns eine E-Mail an{" "}
+              Falls Sie noch Fragen waben, können Sie uns eine E-Mail an{" "}
               <a href="mailto:info@kostrjanc.de" className={classes.a}>
                 info@kostrjanc.de
               </a>{" "}
@@ -79,28 +79,9 @@ export const faq = [
       <div className={classes.container}>
         <p className={classes.st}>{getCurrentLang() === "sb" ? "W:" : "A:"}</p>
         <p className={classes.p}>
-          {getCurrentLang() === "sb" ? (
-            <p>
-              Hdyž sy so njesprawne banował pisaj prošu mailku na{" "}
-              <a className={classes.a} href="mailto:info@kostrjanc.de">
-                info@kostrjanc.de
-              </a>
-              , do mailki pisaj prošu twoju wužiwarsku id (w zastajenjach) a
-              čehodla so njesprawne banowany čuješ. Potom naš team rozsudźi hač
-              bě twój ban wosprawnjeny.
-            </p>
-          ) : (
-            <p>
-              Wenn du dich ungerecht gebankt wurdest, schreib uns bitte eine
-              E-Mail an{" "}
-              <a className={classes.a} href="mailto:info@kostrjanc.de">
-                info@kostrjanc.de
-              </a>
-              .In die E-Mail schreib bitte deinen Benutzer-Id (in den
-              Einstellungen), und warum Sie sich ungerecht gebannt fühlen. Dann
-              entscheidet unser Team ob dein Bann gerechtfertigt war.
-            </p>
-          )}
+          {getCurrentLang() === "sb"
+            ? "Jeli sy so njesprawny na kostrjanc banował, wužiwaj prošu naš formular. Tutón namakaš deleka. Naš team potom rozsudźi hač je twój ban woprawnjeny."
+            : "Falls du dich ungerecht auf kostrjanc gebannt hast, benutze bitte unser Formular. Dieses findest du unten. Unser Team entscheidet dann ob dein Bann gerechfertigt ist."}
         </p>
       </div>
     ),
@@ -119,9 +100,8 @@ export const faq = [
             </p>
           ) : (
             <p>
-              Wenn du wissen willst, welche Daten wir über dich haben, könnt ihr
-              im der kostrjanc App in den Einstellungen, euch ihre Daten
-              ansehen.
+              Wenn du wissen willst, welche Daten wir über dich haben, kannst du
+              im der kostrjanc App in den Einstellungen dir deine Daten ansehen.
             </p>
           )}
         </p>
@@ -135,33 +115,9 @@ export const faq = [
       <div className={classes.container}>
         <p className={classes.st}>{getCurrentLang() === "sb" ? "W:" : "A:"}</p>
         <p className={classes.p}>
-          {getCurrentLang() === "sb" ? (
-            <p>
-              Jeli je tebje něchtó hakował njeje to žadyn wulki problem, my
-              móžemy twoje konto wróćo sadźić. Pisaj nam prošu jednu mailku na{" "}
-              <a className={classes.a} href="mailto:info@kostrjanc.de">
-                info@kostrjanc.de
-              </a>
-              . W tutej mailce pisaj nam wužiwarsku ID twojeho konta (w
-              zastajenjach). Potom dopokazaj nam zo konto tebi słuša. Potom
-              pisaj nam prošu nowu mailku a hesło za konto. Naš team sej potom
-              mailku wobhlada a potom rozsudźi hać my twój konto wróćo
-              zasadźimy.
-            </p>
-          ) : (
-            <p>
-              Falls dich jemand gehackt hat ist das kein großes Problem, wir
-              können dein Konto zurücksetzen. Schreib uns bitte eine E-Mail an{" "}
-              <a className={classes.a} href="mailto:info@kostrjanc.de">
-                info@kostrjanc.de
-              </a>
-              . In dieser E-Mail schreib uns die Benutzer-ID (in den
-              Einstellungen) deines Kontos. Dann beweise uns dass, das Konto dir
-              gehört. Dann schreib uns bitte deine neue E-Mail und Passwort für
-              das Konto. Unser Team schaut sich dann die Mail an und dann
-              entscheidet ob wir dein Konto zurücksetzen.
-            </p>
-          )}
+          {getCurrentLang() === "sb"
+            ? "Jeli je tebje něchtó hackował, njeje to žadyn wulki problem. Wužiwaj cyle jednore formular, tutón namakaš deleka."
+            : "Falls dich jemand gehackt hat, ist das kein großes Problem. Benutze ganz einfache das Formular, dieses findest du unten."}
         </p>
       </div>
     ),
@@ -173,11 +129,9 @@ export const faq = [
       <div className={classes.container}>
         <p className={classes.st}>{getCurrentLang() === "sb" ? "W:" : "A:"}</p>
         <p className={classes.p}>
-          {getCurrentLang() === "sb" ? (
-            <p>Potom wužiwaj dashboard.</p>
-          ) : (
-            "Dann verwende unser Dashboard."
-          )}
+          {getCurrentLang() === "sb"
+            ? "Potom wužiwaj dashboard."
+            : "Dann verwende unser Dashboard."}
         </p>
       </div>
     ),
