@@ -16,13 +16,13 @@ const Hero = () => {
           <p className={`${styles.paragraph}`}>
             {getCurrentLang() === "sb"
               ? "1. Serbski Social Media"
-              : "1. Sorbisches Sozial Media"}
+              : "1. Sorbisches Social Media"}
           </p>
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-barlow font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-            {getCurrentLang() === "sb" ? "My předstajimy" : "Wir stellen vor"}{" "}
+            {getCurrentLang() === "sb" ? "My předstajimy" : "Wir stellen vor:"}{" "}
             <br className="sm:block hidden" />
             <span className="text-gradient">kostrjanc.</span>
           </h1>
@@ -30,7 +30,7 @@ const Hero = () => {
         <p className={`${styles.paragraph} max-w-[720px] mt-10`}>
           {getCurrentLang() === "sb"
             ? "Cyril Mark a Korla Baier mějachu ideju, social media aplikaciju za serbski lud stworić. Hobby za programěrowanje a design aplikacijow mějachu hólcaj hižo. Tak stworištaj hólcy w běhu pół lěta aplikaciju a přidatne online-słužby."
-            : "Cyril Mark und Korla Baier hatten die Idee, eine Sozial Media Plattform für die Sorben zu entwickeln. Das Hobby vom Programmieren und Designen von Apps hatten die Jungs bereits. So erschufen die Beiden innerhalb eines halben Jahres die App und dazugehörige Online-Dienste."}
+            : "Cyril Mark und Korla Baier hatten die Idee, eine Social Media Plattform für die Sorben zu entwickeln. Das Hobby Programmieren und Designen von Apps hatten die Jungs bereits. So erschufen die Beiden innerhalb eines halben Jahres die App und dazugehörige Online-Dienste."}
         </p>
       </div>
       <div

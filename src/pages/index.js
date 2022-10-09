@@ -7,20 +7,19 @@ import Impressum from "./Impressum";
 import Formular from "./Formular";
 import Contact from "./Contact";
 import AgbLegal from "./AgbLegal";
+import Drawing from "./Drawing";
 
 import Error from "./Error";
 
 export {
-    Start,
-    About,
-    Business,
-    Help,
-    
-    Impressum,
-    Contact,
-    Formular, 
-    AgbLegal,
-
-    Error
-}
-
+  Start,
+  About,
+  Business,
+  Help,
+  Drawing,
+  Impressum,
+  Contact,
+  Formular,
+  AgbLegal,
+  Error,
+};

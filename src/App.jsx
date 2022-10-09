@@ -11,10 +11,10 @@ import {
   Contact,
   AgbLegal,
   Formular,
+  Drawing,
 } from "./pages";
 
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Drawing from "./pages/Drawing";
 
 const App = () => {
   return (
