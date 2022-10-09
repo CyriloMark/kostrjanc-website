@@ -195,14 +195,14 @@ export const formularSections = [
   {
     id: "business",
     title: "Požadanje za kostrjanc Business program",
-    title_de: "Bewerung für das kostrjanc Business Programm",
-    icon: business,
+    title_de: "Bewerbung für das kostrjanc Business Programm",
+    icon: business
   },
   {
     id: "werifikacija",
     title: "Požadanje za werifikowanje",
-    title_de: "Bewerung für die Verifikation",
-    icon: verify,
+    title_de: "Bewerbung für die Verifikation",
+    icon: verify
   },
   {
     id: "ban",
