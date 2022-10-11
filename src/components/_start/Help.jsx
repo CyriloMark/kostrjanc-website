@@ -20,17 +20,20 @@ const Help = () => (
     </div>
 
     <div
-      className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 sm:mb-0 mb-5 sm:flex-col flex-row`}
+      className={`${styles.flexCenter}
+        sm:ml-10 sm:mt-0 sm:mb-0 sm:flex-col 
+        xs:ml-0 xs:mt-10 xs:mb-5 xs:flex-row
+        ml-0 mt-5 mb-0 flex-col `}
     >
       <Button
         text={getCurrentLang() === "sb" ? "Pomoc" : "Hilfe"}
-        styles={"sm:mr-0 mr-5 sm:mb-5 mb-0"}
+        styles={"sm:mr-0 xs:mr-5 mr-0 sm:mb-5 xs:mb-0 mb-5"}
         link={true}
         to="/pomoc"
       />
       <Button
         text={getCurrentLang() === "sb" ? "Impresum" : "Impressum"}
-        styles={"sm:mr-0 mr-5 sm:mb-5 mb-0"}
+        styles={"sm:mr-0 xs:mr-5 mr-0 sm:mb-5 xs:mb-0 mb-5"}
         link={true}
         to="/impresum"
       />

@@ -22,9 +22,9 @@ const Hero = () => {
 
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-barlow font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-            {getCurrentLang() === "sb" ? "My předstajimy" : "Wir stellen vor:"}{" "}
+            {getCurrentLang() === "sb" ? "My předstajimy:" : "Wir stellen vor:"}{" "}
             <br className="sm:block hidden" />
-            <span className="text-gradient">kostrjanc.</span>
+            <span className="text-gradient">kostrjanc</span>
           </h1>
         </div>
         <p className={`${styles.paragraph} max-w-[720px] mt-10`}>

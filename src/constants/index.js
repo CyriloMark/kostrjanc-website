@@ -106,8 +106,8 @@ export const business_features = [
 
 export const footerLinks = [
   {
-    title: "Pomocne strony",
-    title_de: "Hilfs Seiten",
+    title: "Předewzaće",
+    title_de: "Unternehmen",
     links: [
       {
         name: "Start",

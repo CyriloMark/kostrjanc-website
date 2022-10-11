@@ -64,20 +64,23 @@ const Impressum = () => {
           <h2 className={styles.paragraph}>
             Dalše informacije wo škiće datow a dalšich prawniskich temow:
           </h2>
-          <div className="w-full flex-row flex mt-10">
-            <Button
-              styles={`mr-5`}
-              text="Škit datow"
-              link
-              to="/impresum/skitdatow"
-            />
-            <Button
-              styles={`mr-5`}
-              text="Kontakt"
-              link
-              to="/impresum/kontakt"
-            />
+          <div className="w-full flex-col flex-1 mt-10">
+            <div className="w-full flex-row">
+              <Button
+                styles={`mr-5`}
+                text="Škit datow"
+                link
+                to="/impresum/skitdatow"
+              />
+              <Button
+                styles={`mr-5`}
+                text="Kontakt"
+                link
+                to="/impresum/kontakt"
+              />
+            </div>
             <LinkToFormular
+              styles={"mt-5"}
               text={
                 getCurrentLang() === "sb"
                   ? "Naš formular za wšo"

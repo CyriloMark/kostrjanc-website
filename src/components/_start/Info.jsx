@@ -44,7 +44,7 @@ const Info = () => (
           </p>
       }
 
-      <a href="/#install">
+      <a href="#install">
         <Button
           text={getCurrentLang() === "sb" ? "Instalować" : "Installieren"}
         />

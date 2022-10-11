@@ -95,7 +95,7 @@ const Business = () => {
 
         {/* wie funtioniert werbung */}
         <div
-          className={`${styles.paddingY} flex sm:flex-row-reverse flex-col text-end`}
+          className={`${styles.paddingY} flex sm:flex-row-reverse flex-col sm:text-end`}
         >
           <div className="flex flex-col flex-1">
             <h2 className={`mb-5 ${styles.heading2} max-w-[980px]`}>
@@ -491,12 +491,12 @@ const Business = () => {
 
         {/* wie funtioniert dashboard */}
         <div
-          className={`${styles.paddingY} flex flex-col self-end items-end text-end`}
+          className={`${styles.paddingY} sm:self-end sm:items-end sm:text-end flex flex-col`}
         >
           <h2 className={`mb-5 ${styles.heading2} max-w-[980px]`}>
             {getCurrentLang() === "sb"
               ? "Kak funguje kostrjanc Business dashboard?"
-              : "Wie funktionert kostrjanc Werbung?"}
+              : "Wie funktionert das kostrjanc Business Dashboard?"}
           </h2>
 
           <div className={`${styles.paragraph} max-w-[720px]`}>
@@ -521,7 +521,7 @@ const Business = () => {
               </p>
             ) : (
               <p>
-                Auf dem kostrjanc Buisness dashboard können sie Werbungen
+                Auf dem kostrjanc Buisness Dashboard können sie Werbungen
                 veröffentlichen, Sie können sich ihre bereits veröffentlichten
                 Werbungen anschauen, sowie ihre aktuelen Kosten. Wenn ihr
                 Account auf einen Buisness Account umgewandelt wurde könne sie
