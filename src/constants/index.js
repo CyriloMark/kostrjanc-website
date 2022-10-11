@@ -107,7 +107,7 @@ export const business_features = [
 export const footerLinks = [
   {
     title: "Pomocne strony",
-    title_de: "Helfende Seiten",
+    title_de: "Hilfs Seiten",
     links: [
       {
         name: "Start",
@@ -162,28 +162,13 @@ export const footerLinks = [
       },
     ],
   },
-  {
-    title: "Partnerjo",
-    title_de: "Partner",
-    links: [
-      {
-        name: "Załožba za serbski lud",
-        name_de: "Stiftung für das sorbische Folk",
-        link: "https://stiftung.sorben.com/start/",
-      },
-      {
-        name: "Ludowe Nachładnistwo Domowina",
-        name_de: "Domowina-Verlag",
-        link: "https://www.domowina-verlag.de/",
-      },
-    ],
-  },
 ];
 
 export const getCurrentLang = () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  if (!urlParams.has("lang")) return "sb";
-  else return urlParams.get("lang");
+  //const urlParams = new URLSearchParams(window.location.search);
+  //if (!urlParams.has("lang")) return "sb";
+  //else return urlParams.get("lang");
+  return localStorage.getItem("lang");
 };
 
 export const getPersistantAttributes = () => {
@@ -196,13 +181,13 @@ export const formularSections = [
     id: "business",
     title: "Požadanje za kostrjanc Business program",
     title_de: "Bewerbung für das kostrjanc Business Programm",
-    icon: business
+    icon: business,
   },
   {
     id: "werifikacija",
     title: "Požadanje za werifikowanje",
     title_de: "Bewerbung für die Verifikation",
-    icon: verify
+    icon: verify,
   },
   {
     id: "ban",
