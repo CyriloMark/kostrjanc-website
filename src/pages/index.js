@@ -1,6 +1,7 @@
 import Start from "./Start";
 import About from "./About";
-import Business from "./Business";
+import AboutKostrjanc from "./AboutKostrjanc";
+// import Business from "./Business";
 import Help from "./Help";
 
 import Impressum from "./Impressum";
@@ -14,7 +15,8 @@ import Error from "./Error";
 export {
   Start,
   About,
-  Business,
+  // Business,
+  AboutKostrjanc,
   Help,
   Drawing,
   Impressum,

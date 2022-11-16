@@ -23,7 +23,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="kostrjanc logo"
-          className="w-[64px] h-[64px] cursor-pointer hover:rotate-180 hover:scale-110 transition ease-in-out duration-500"
+          className="w-[52px] h-[52px] cursor-pointer hover:rotate-180 hover:scale-110 transition ease-in-out duration-500"
         />
       </Link>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -40,11 +40,13 @@ const Navbar = () => {
                             ${index === navLinks.length - 1 ? "mr-0" : "mr-5"}`}
             onClick={() => setActive(nav.title)}
           >
-            <Link to={nav.to + "?" + getPersistantAttributes()}>
+            <Link to={nav.to + "?" + getPersistantAttributes()} className="flex flex-row items-center">
+              <img src={nav.icon} alt="icon" className="w-[18px] h-[18px] mr-2" />
               {getCurrentLang() === "sb" ? nav.title : nav.title_de}
             </Link>
           </li>
         ))}
+
         {langs.map((lang) => (
           <li
             key={lang.id}
@@ -94,6 +96,7 @@ const Navbar = () => {
                 onClick={() => setActive(nav.title)}
               >
                 <Link to={nav.to + "?" + getPersistantAttributes()}>
+                  {/* <img src={nav.icon} alt="icon" /> */}
                   {nav.title}
                 </Link>
               </li>

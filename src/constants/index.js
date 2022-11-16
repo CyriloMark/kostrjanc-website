@@ -4,24 +4,28 @@ export const navLinks = [
     title: "Start",
     title_de: "Start",
     to: "/",
+    icon: home,
   },
   {
-    id: "about",
+    id: "about_us",
     title: "Štó smy my?",
     title_de: "Wer sind wir?",
     to: "/stomysmy",
+    icon: home,
   },
   {
-    id: "business",
-    title: "Business",
-    title_de: "Business",
-    to: "/business",
+    id: "about_kostrjanc",
+    title: "Što je kostrjanc?",
+    title_de: "Was ist kostrjanc?",
+    to: "/stojekostrjanc",
+    icon: pc,
   },
   {
     id: "help",
     title: "Pomoc",
     title_de: "Hilfe",
     to: "/pomoc",
+    icon: help,
   },
 ];
 
@@ -39,75 +43,22 @@ export const langs = [
   },
 ];
 
-export const stats = [
-  {
-    id: "users",
-    title: "Wužiwarjow",
-    title_de: "Benutzer",
-    value: 0,
-  },
-  {
-    id: "posts",
-    title: "Posty",
-    title_de: "Posts",
-    value: 0,
-  },
-  {
-    id: "events",
-    title: "Ewenty",
-    title_de: "Events",
-    value: 0,
-  },
-];
-
 import {
   business,
-  ad,
   verify,
+  help,
   ban,
-  empty,
   star,
   bugs,
   corona,
+  home,
+  pc,
 } from "../assets/";
-
-export const business_features = [
-  {
-    id: "feature-0",
-    icon: business,
-    title: "kostrjanc Business program",
-    title_de: "kostrjanc Business Programm",
-    content:
-      "Z našim Business programom maš móžnosć, wabjenja šaltować, a precizne posty a ewenty wozjewić, ale so tež werifikować dać.",
-    content_de:
-      "Mit unserem Business Programm hat man die Möglichkeit, Werbungen zu schalten, und präzise Posts und Events zu veröffentlichen, sich aber auch verifizieren zu lassen.",
-  },
-  {
-    id: "feature-1",
-    icon: verify,
-    title: "Werifikacija",
-    title_de: "Verifikation",
-    content:
-      "Jako werifikowany wužiwar maš móžnosć, kostrjanc sobu regulować. Dalše informacije namakaš tu.",
-    content_de:
-      "Als verifizierter Benutzer hast du die Möglichkeit, kostrjanc mit zu regulieren. Mehr Informationen findest du hier.",
-  },
-  {
-    id: "feature-2",
-    icon: ad,
-    title: "W kostrjanc wabić",
-    title_de: "Mit kostrjanc werben",
-    content:
-      "Ty sy předewzaćer a chceš na kostrjanc wabić? Wužij chancu, my tebje rady podpěramy.",
-    content_de:
-      "Du bist Unternehmer und willst auf kostrjanc deine Werbung schalten. Nutz deine Chance, wir helfen dir gerne.",
-  },
-];
 
 export const footerLinks = [
   {
-    title: "Předewzaće",
-    title_de: "Unternehmen",
+    title: "kostrjanc",
+    title_de: "kostrjanc",
     links: [
       {
         name: "Start",
@@ -115,9 +66,14 @@ export const footerLinks = [
         link: "https://www.kostrjanc.de/",
       },
       {
-        name: "Business Dashboard",
-        name_de: "Business Dashboard",
+        name: "Moderator Dashboard",
+        name_de: "Moderator Dashboard",
         link: "https://dashboard.kostrjanc.de/",
+      },
+      {
+        name: "Werifikacija",
+        name_de: "Verifikation",
+        link: "https://www.kostrjanc.de/pomoc",
       },
       {
         name: "Pomoc",
@@ -129,16 +85,11 @@ export const footerLinks = [
         name_de: "Datenschutz und Rechtliches",
         link: "https://www.kostrjanc.de/impresum/agb",
       },
-      {
-        name: "Impresum",
-        name_de: "Impressum",
-        link: "https://www.kostrjanc.de/impresum",
-      },
     ],
   },
   {
-    title: "Business",
-    title_de: "Business",
+    title: "Předewzaće",
+    title_de: "Unternehmen",
     links: [
       {
         name: "kostrjanc Business program",
@@ -151,9 +102,9 @@ export const footerLinks = [
         link: "https://dashboard.kostrjanc.de/",
       },
       {
-        name: "Werifikacija",
-        name_de: "Verifikation",
-        link: "https://www.kostrjanc.de/pomoc",
+        name: "Impresum",
+        name_de: "Impressum",
+        link: "https://www.kostrjanc.de/impresum",
       },
       {
         name: "Kontakt",
@@ -165,10 +116,9 @@ export const footerLinks = [
 ];
 
 export const getCurrentLang = () => {
-  //const urlParams = new URLSearchParams(window.location.search);
-  //if (!urlParams.has("lang")) return "sb";
-  //else return urlParams.get("lang");
-  return localStorage.getItem("lang");
+  const urlParams = new URLSearchParams(window.location.search);
+  if (!urlParams.has("lang")) return "sb";
+  else return urlParams.get("lang");
 };
 
 export const getPersistantAttributes = () => {

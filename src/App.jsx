@@ -4,14 +4,15 @@ import { Navbar } from "./components";
 
 import {
   Start,
-  Help,
-  Business,
   About,
+  AboutKostrjanc,
+  Help,
   Impressum,
   Contact,
   AgbLegal,
   Formular,
   Drawing,
+  Error
 } from "./pages";
 
 import { HashRouter, Route, Routes, BrowserRouter } from "react-router-dom";
@@ -26,7 +27,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Start />} />
           <Route path="/stomysmy" element={<About />} />
-          <Route path="/business" element={<Business />} />
+          <Route path="/stojekostrjanc" element={<AboutKostrjanc />} />
+          {/* <Route path="/business" element={<Business />} /> */}
           <Route path="/pomoc" element={<Help />} />
 
           <Route path="/pomoc/formular" element={<Formular />} />
@@ -36,6 +38,8 @@ const App = () => {
           <Route path="/impresum/skitdatow" element={<AgbLegal />} />
 
           <Route path="/wobraz" element={<Drawing />} />
+
+          <Route path="*" element={<Error />} />
         </Routes>
       </div>
     </BrowserRouter>

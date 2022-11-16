@@ -3,11 +3,9 @@ import { useEffect, useState } from "react";
 import styles from "../style";
 
 import Hero from "../components/_start/Hero";
-import Stats from "../components/_start/Stats";
 import Info from "../components/_start/Info";
 import Install from "../components/_start/Install";
 import Countdown from "../components/_start/Countdown";
-import Business from "../components/_start/Business";
 import Help from "../components/_start/Help";
 import Footer from "../components/Footer";
 
@@ -31,10 +29,8 @@ const Start = () => {
       <div
         className={`${styles.paddingX} ${styles.flexCenterVert} w-full flex-col`}
       >
-        <Stats />
         <Info />
         <Install releaseDate={release} />
-        <Business />
         <Countdown releaseDate={release} />
         <Help />
         <Footer />

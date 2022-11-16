@@ -13,6 +13,8 @@ import help from "./help.svg";
 import star from "./star.svg";
 import bugs from "./bugs.svg";
 import corona from "./corona.svg";
+import home from "./home.svg";
+import pc from "./pc.svg";
 
 export {
   menu,
@@ -30,4 +32,6 @@ export {
   star,
   bugs,
   corona,
+  home,
+  pc,
 };
