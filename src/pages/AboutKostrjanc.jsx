@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react';
 import styles from "../style";
 
 import AboutNavbar from '../components/_aboutkostrjanc/AboutNavbar';
-import General from '../components/_aboutkostrjanc/General';
-import PostEventProfile from '../components/_aboutkostrjanc/PostEventProfile';
 import { Footer } from "../components";
 
 import { getCurrentLang } from '../constants';
@@ -35,17 +33,6 @@ const AboutKostrjanc = () => {
                         </h1>
                     </div>
                 </div>
-
-                <General />
-                <PostEventProfile />
-                <section
-                    id="install"
-                    className="p-10 h-[50vh] bg-gray-600 my-5"
-                ></section>
-                <section
-                    id="verify"
-                    className="p-10 h-[50vh] bg-gray-800 my-5"
-                ></section>
 
                 <Footer />
             </div>
