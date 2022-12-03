@@ -11,7 +11,7 @@ export const navLinks = [
     title: "Štó smy my?",
     title_de: "Wer sind wir?",
     to: "/stomysmy",
-    icon: home,
+    icon: friends,
   },
   {
     id: "about_kostrjanc",
@@ -26,6 +26,45 @@ export const navLinks = [
     title_de: "Hilfe",
     to: "/pomoc",
     icon: help,
+  },
+];
+
+export const aboutNavLinks = [
+  {
+    id: "start",
+    title: "Start",
+    title_de: "Start",
+    to: "#",
+  },
+  {
+    id: "general",
+    title: "Powšitkowne",
+    title_de: "Allgemeines",
+    to: "#general",
+  },
+  {
+    id: "post",
+    title: "Posty",
+    title_de: "Posts",
+    to: "#post",
+  },
+  {
+    id: "event",
+    title: "Ewenty",
+    title_de: "Events",
+    to: "#event",
+  },
+  {
+    id: "install",
+    title: "Instalacija",
+    title_de: "Installation",
+    to: "#install",
+  },
+  {
+    id: "verify",
+    title: "Werifikacija",
+    title_de: "Verifikation",
+    to: "#verify",
   },
 ];
 
@@ -53,6 +92,7 @@ import {
   corona,
   home,
   pc,
+  friends,
 } from "../assets/";
 
 export const footerLinks = [

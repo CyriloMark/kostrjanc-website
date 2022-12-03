@@ -18,7 +18,7 @@ const Navbar = () => {
   const [activeLang, setActiveLang] = useState(getCurrentLang());
 
   return (
-    <nav className="z-[99] w-full flex py-6 justify-between items-center navbar">
+    <nav className="z-[99] w-full flex py-6 justify-between items-center">
       <Link to={"/?" + getPersistantAttributes()}>
         <img
           src={logo}
@@ -26,6 +26,7 @@ const Navbar = () => {
           className="w-[52px] h-[52px] cursor-pointer hover:rotate-180 hover:scale-110 transition ease-in-out duration-500"
         />
       </Link>
+
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
@@ -95,9 +96,9 @@ const Navbar = () => {
                   }`}
                 onClick={() => setActive(nav.title)}
               >
-                <Link to={nav.to + "?" + getPersistantAttributes()}>
-                  {/* <img src={nav.icon} alt="icon" /> */}
-                  {nav.title}
+                <Link to={nav.to + "?" + getPersistantAttributes()} className="flex flex-row items-center">
+                  <img src={nav.icon} alt="icon" className="w-[18px] h-[18px] mr-2" />
+                  {getCurrentLang() === "sb" ? nav.title : nav.title_de}
                 </Link>
               </li>
             ))}

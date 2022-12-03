@@ -44,11 +44,17 @@ const Info = () => (
           </p>
       }
 
-      <a href="#install">
+      <div className={`flex-1 ${styles.flexStart} flex-row`}>
+        <a href="#install" className="mr-5">
+          <Button
+            text={getCurrentLang() === "sb" ? "Instalować" : "Installieren"}
+          />
+        </a>
         <Button
-          text={getCurrentLang() === "sb" ? "Instalować" : "Installieren"}
+          to="/stojekostrjanc" link={true}
+          text={getCurrentLang() === "sb" ? "Wjac informacijow" : "Mehr informationen"}
         />
-      </a>
+      </div>
     </div>
   </section>
 );

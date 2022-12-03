@@ -15,6 +15,7 @@ import bugs from "./bugs.svg";
 import corona from "./corona.svg";
 import home from "./home.svg";
 import pc from "./pc.svg";
+import friends from "./friends.svg";
 
 export {
   menu,
@@ -34,4 +35,5 @@ export {
   corona,
   home,
   pc,
+  friends,
 };
