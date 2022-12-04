@@ -5,6 +5,7 @@ import { useCountdown } from "../../hooks/Countdown";
 import styles from "../../style";
 
 const Countdown = ({ releaseDate }) => {
+
   const [days, hours, minutes, seconds] = useCountdown(releaseDate);
 
   return (

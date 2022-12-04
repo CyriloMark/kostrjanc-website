@@ -10,14 +10,17 @@ import Help from "../components/_start/Help";
 import Footer from "../components/Footer";
 
 const Start = () => {
-  const [release, setRelease] = useState(Date.now());
+  const [release, setRelease] = useState("");
 
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "kostrjanc - Start";
     fetch(
       "https://kostrjanc-default-rtdb.europe-west1.firebasedatabase.app/release_date.json"
-    ).then((res) => res.json().then((val) => setRelease(val)));
+    ).then((res) => res.json().then((val) => {
+      console.log(val)
+      setRelease(val);
+    }));
   }, []);
 
   return (
@@ -30,8 +33,13 @@ const Start = () => {
         className={`${styles.paddingX} ${styles.flexCenterVert} w-full flex-col`}
       >
         <Info />
-        <Install releaseDate={release} />
-        <Countdown releaseDate={release} />
+        {
+          release !== "" ?
+            <>  
+              <Install releaseDate={release} />
+              <Countdown releaseDate={release} />
+            </> : null
+        }
         <Help />
         <Footer />
       </div>
