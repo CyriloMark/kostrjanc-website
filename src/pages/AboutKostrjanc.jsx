@@ -7,6 +7,8 @@ import { Footer } from "../components";
 
 import { getCurrentLang } from '../constants';
 
+import { navbar, interactonBar, mainHeader } from "../assets/_aboutkostrjanc2/index";
+
 const AboutKostrjanc = () => {
 
     useEffect(() => {
@@ -33,6 +35,10 @@ const AboutKostrjanc = () => {
                         </h1>
                     </div>
                 </div>
+
+                <img className="w-[420px] my-2" src={navbar} />
+                <img className="w-[420px] my-2" src={interactonBar} />
+                <img className="w-[420px] my-2" src={mainHeader} />
 
                 <Footer />
             </div>

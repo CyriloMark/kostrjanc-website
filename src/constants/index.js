@@ -55,6 +55,12 @@ export const aboutNavLinks = [
     to: "#event",
   },
   {
+    id: "account",
+    title: "Konto",
+    title_de: "Account",
+    to: "#account",
+  },
+  {
     id: "install",
     title: "Instalacija",
     title_de: "Installation",
