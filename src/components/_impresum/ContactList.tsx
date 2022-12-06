@@ -11,15 +11,15 @@ function ListElement(contact: { cont: Contact }) {
           href={"mailto:" + contact.cont.email}
           className="text-gradient cursor-pointer"
         >
-          {contact.cont.email}
+          {'> ' + contact.cont.email}
         </a>
         <a
           href={"tel:" + contact.cont.tel}
           className="text-gradient cursor-pointer"
         >
-          {contact.cont.tel}
+          {'> ' + contact.cont.tel}
         </a>
-        <div className={`flex flex-col ml-5`}>
+        <div className={`flex flex-col`}>
           {contact.cont.adress.map((txt, ind) => (
             <p
               key={ind}
