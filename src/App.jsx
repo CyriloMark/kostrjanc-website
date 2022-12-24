@@ -15,7 +15,7 @@ import {
   Error
 } from "./pages";
 
-import { HashRouter, Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (

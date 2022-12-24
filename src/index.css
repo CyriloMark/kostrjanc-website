@@ -141,3 +141,30 @@ body {
 .scrollY {
   scroll-snap-type: y mandatory;
 }
+
+.blocksatz {
+  hyphens: auto;
+  text-align: justify;
+}
+
+
+.__hidden {
+  opacity: 0;
+  filter: blur(10px);
+  /* transition: all 1s cubic-bezier(1, 0, 0, 1); */
+  /* transition: all 1s cubic-bezier(0,.5,.5,1); */
+  transition: all 1s cubic-bezier(.5,0,0,1);
+  transform: translateY(50%) scale(1.1);
+}
+
+.__show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0%) scale(1);
+}
+
+@media(prefer-reduced-motion) {
+  .__hidden {
+      transition: none;
+  }
+}
