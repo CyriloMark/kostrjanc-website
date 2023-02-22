@@ -12,10 +12,11 @@ import {
   AgbLegal,
   Formular,
   Drawing,
-  Error
+  Error,
 } from "./pages";
 
 import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Share from "./pages/Share";
 
 const App = () => {
   return (
@@ -38,6 +39,9 @@ const App = () => {
           <Route path="/impresum/skitdatow" element={<AgbLegal />} />
 
           <Route path="/wobraz" element={<Drawing />} />
+
+          <Route path="/p/:id" element={<Share type="p" />} />
+          <Route path="/e/:id" element={<Share type="e" />} />
 
           <Route path="*" element={<Error />} />
         </Routes>
