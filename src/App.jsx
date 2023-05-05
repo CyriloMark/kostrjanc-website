@@ -3,51 +3,81 @@ import styles from "./style";
 import { Navbar } from "./components";
 
 import {
-  Start,
-  About,
-  AboutKostrjanc,
-  Help,
-  Impressum,
-  Contact,
-  AgbLegal,
-  Formular,
-  Drawing,
-  Error,
+    Start,
+    About,
+    AboutKostrjanc,
+    Help,
+    Impressum,
+    Contact,
+    AgbLegal,
+    Formular,
+    Drawing,
+    Error,
+    Beta,
 } from "./pages";
 
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import {
+    createBrowserRouter,
+    RouterProvider,
+    Route,
+    Routes,
+    BrowserRouter,
+    Link,
+} from "react-router-dom";
 import Share from "./pages/Share";
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <div className="bg-primary w-full overflow-hidden">
-        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-          <Navbar />
-        </div>
-        <Routes>
-          <Route path="/" element={<Start />} />
-          <Route path="/stomysmy" element={<About />} />
-          <Route path="/stojekostrjanc" element={<AboutKostrjanc />} />
-          {/* <Route path="/business" element={<Business />} /> */}
-          <Route path="/pomoc" element={<Help />} />
+    const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <Beta />,
+        },
+        {
+            path: "/wobraz",
+            element: <Drawing />,
+        },
+        {
+            path: "/:type/:id",
+            element: <Share />,
+            loader: ({ params }) => {
+                params.type, params.id;
+            },
+        },
+    ]);
 
-          <Route path="/pomoc/formular" element={<Formular />} />
+    return <RouterProvider router={router} />;
+};
 
-          <Route path="/impresum" element={<Impressum />} />
-          <Route path="/impresum/kontakt" element={<Contact />} />
-          <Route path="/impresum/skitdatow" element={<AgbLegal />} />
+const App2 = () => {
+    return (
+        <BrowserRouter>
+            <div className="bg-primary w-full overflow-hidden">
+                <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+                    <Navbar />
+                </div>
+                <Routes>
+                    <Route path="/" element={<Start />} />
+                    <Route path="/stomysmy" element={<About />} />
+                    <Route
+                        path="/stojekostrjanc"
+                        element={<AboutKostrjanc />}
+                    />
+                    {/* <Route path="/business" element={<Business />} /> */}
+                    <Route path="/pomoc" element={<Help />} />
 
-          <Route path="/wobraz" element={<Drawing />} />
+                    <Route path="/pomoc/formular" element={<Formular />} />
 
-          <Route path="/p/:id" element={<Share type="p" />} />
-          <Route path="/e/:id" element={<Share type="e" />} />
+                    <Route path="/impresum" element={<Impressum />} />
+                    <Route path="/impresum/kontakt" element={<Contact />} />
+                    <Route path="/impresum/skitdatow" element={<AgbLegal />} />
 
-          <Route path="*" element={<Error />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
-  );
+                    <Route path="/wobraz" element={<Drawing />} />
+
+                    <Route path="*" element={<Error />} />
+                </Routes>
+            </div>
+        </BrowserRouter>
+    );
 };
 
 export default App;

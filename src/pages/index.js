@@ -10,18 +10,20 @@ import Contact from "./Contact";
 import AgbLegal from "./AgbLegal";
 import Drawing from "./Drawing";
 
+import Beta from "./Beta";
 import Error from "./Error";
 
 export {
-  Start,
-  About,
-  // Business,
-  AboutKostrjanc,
-  Help,
-  Drawing,
-  Impressum,
-  Contact,
-  Formular,
-  AgbLegal,
-  Error,
+    Start,
+    About,
+    // Business,
+    AboutKostrjanc,
+    Help,
+    Drawing,
+    Impressum,
+    Contact,
+    Formular,
+    AgbLegal,
+    Error,
+    Beta,
 };
