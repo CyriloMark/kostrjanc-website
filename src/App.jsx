@@ -43,6 +43,10 @@ const App = () => {
                 params.type, params.id;
             },
         },
+        {
+            path: "*",
+            element: <Error />,
+        },
     ]);
 
     return <RouterProvider router={router} />;
