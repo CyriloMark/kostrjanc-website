@@ -26,7 +26,7 @@ import {
 } from "react-router-dom";
 import Share from "./pages/Share";
 
-const App = () => {
+const App2 = () => {
     const router = createBrowserRouter([
         {
             path: "/",
@@ -48,7 +48,7 @@ const App = () => {
     return <RouterProvider router={router} />;
 };
 
-const App2 = () => {
+const App = () => {
     return (
         <BrowserRouter>
             <div className="bg-primary w-full overflow-hidden">
