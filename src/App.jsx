@@ -27,18 +27,16 @@ import {
 import Share from "./pages/Share";
 
 const App = () => {
-    return <Beta />;
-};
-
-const App3 = () => {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Beta />,
+            element: <Start />,
+            errorElement: <Error />,
         },
         {
             path: "/wobraz",
             element: <Drawing />,
+            errorElement: <Error />,
         },
         {
             path: "/:type/:id",
@@ -46,6 +44,18 @@ const App3 = () => {
             loader: ({ params }) => {
                 params.type, params.id;
             },
+            errorElement: <Error />,
+        },
+
+        {
+            path: "/pomoc",
+            element: <Help />,
+            errorElement: <Error />,
+        },
+        {
+            path: "/pomoc/formular",
+            element: <Formular />,
+            errorElement: <Error />,
         },
     ]);
 
