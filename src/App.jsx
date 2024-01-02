@@ -57,6 +57,11 @@ const App = () => {
             element: <Formular />,
             errorElement: <Error />,
         },
+        {
+            path: "/impresum",
+            element: <Impressum />,
+            errorElement: <Error />,
+        },
     ]);
 
     return <RouterProvider router={router} />;
