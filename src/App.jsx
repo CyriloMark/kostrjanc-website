@@ -62,6 +62,16 @@ const App = () => {
             element: <Impressum />,
             errorElement: <Error />,
         },
+        {
+            path: "/impresum/kontakt",
+            element: <Contact />,
+            errorElement: <Error />,
+        },
+        {
+            path: "/impresum/skitdatow",
+            element: <AgbLegal />,
+            errorElement: <Error />,
+        },
     ]);
 
     return <RouterProvider router={router} />;
