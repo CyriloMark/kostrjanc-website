@@ -50,9 +50,18 @@ const Footer = () => {
                     ))}
                 </div>
             </div>
+            <div className="w-full max-w-[720px] mt-10">
+                <p
+                    className={`font-normal text-white ${styles.paragraph} text-center`}>
+                    Projekt spěchuje so wot Załožby za serbski lud, kotraž
+                    dóstawa lětnje přiražki z dawkowych srědkow na zakładźe
+                    hospodarskich planow, wobzamknjenych wot Zwjazkoweho sejma,
+                    Krajneho sejma Braniborskeje a Sakskeho krajneho sejma.
+                </p>
+            </div>
             <div className="w-full mt-10">
                 <p
-                    className={`ont-normal text-dimWhite text-[16px] leading-[20px] font-roboto_mono text-center`}>
+                    className={`font-normal text-dimWhite text-[16px] leading-[20px] font-roboto_mono text-center`}>
                     &copy; 2022-2024 | All Rights Reserved | Produced by Cyrill
                     Mark and Korla Baier
                 </p>
