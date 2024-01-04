@@ -1,0 +1,59 @@
+:root {
+    --blue: #5884b0;
+    --sec: #143c63;
+    --black: #060a0d;
+    --white: #cce6ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-family: "Barlow", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--black);
+}
+
+#button,
+button {
+    max-width: fit-content;
+    background-color: var(--blue);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    transition: 250ms all ease;
+    cursor: pointer;
+}
+
+#button a,
+button {
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.footer {
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.footer .link-box {
+    text-align: center;
+}
+.footer .link-box a p {
+    margin-top: 0.5rem;
+}
+.footer .stiftung {
+    margin-top: 1rem;
+}
+.footer .copy {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    text-align: center;
+}
