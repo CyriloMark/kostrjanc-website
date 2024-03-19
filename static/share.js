@@ -12,7 +12,7 @@ function getContent() {
     const type = searches[0];
     const id = searches[1].substring(3);
 
-    fetch("https://kostrjanc.ew.r.appspot.com/share/recieve_content", {
+    fetch(process.env.SHARE_URL, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
