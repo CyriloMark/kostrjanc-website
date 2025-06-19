@@ -54,9 +54,9 @@ export const faq = [
     //                         </a>{" "}
     //                         Jeli maće hišće prašenja móžeć nam mailku na{" "}
     //                         <a
-    //                             href="mailto:info@kostrjanc.de"
+    //                             href="mailto:kostrjanc@gmail.com"
     //                             className={classes.a}>
-    //                             info@kostrjanc.de
+    //                             kostrjanc@gmail.com
     //                         </a>{" "}
     //                         pósłać.
     //                     </p>
@@ -73,9 +73,9 @@ export const faq = [
     //                         Falls Sie noch Fragen waben, können Sie uns eine
     //                         E-Mail an{" "}
     //                         <a
-    //                             href="mailto:info@kostrjanc.de"
+    //                             href="mailto:kostrjanc@gmail.com"
     //                             className={classes.a}>
-    //                             info@kostrjanc.de
+    //                             kostrjanc@gmail.com
     //                         </a>{" "}
     //                         schicken.
     //                     </p>

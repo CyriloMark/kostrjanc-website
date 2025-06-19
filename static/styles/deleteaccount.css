@@ -12,7 +12,7 @@
     color: var(--white);
     font-family: "Barlow", sans-serif;
     text-decoration: none;
-    list-style: circle;
+    list-style: decimal;
 }
 
 body {
@@ -24,24 +24,21 @@ h1 {
     font-size: 3.3rem;
     margin-top: 2rem;
 }
-
-h2 {
-    margin-top: 3rem;
-    font-size: 2rem;
-    color: var(--blue);
-}
 h3 {
     margin-top: 2rem;
     font-size: 1.5rem;
 }
+
 p {
     margin-top: 0.8rem;
     max-width: 785px;
 }
 
-.admin div {
-    margin-top: 1rem;
+ol {
+    margin-top: 1em;
+    margin-left: 2rem;
 }
-.admin div p {
-    margin-top: unset;
+
+span {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

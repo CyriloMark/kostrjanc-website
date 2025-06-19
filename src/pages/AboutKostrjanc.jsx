@@ -18,8 +18,8 @@ import {
 } from "../assets/_aboutkostrjanc2/index";
 
 const AboutKostrjanc = () => {
-
-    const classicBoxStyle = "min-w-[240px] max-w-[480px] flex flex-1 m-8 flex-col"
+    const classicBoxStyle =
+        "min-w-[240px] max-w-[480px] flex flex-1 m-8 flex-col";
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -28,35 +28,38 @@ const AboutKostrjanc = () => {
             entries.forEach(entry => {
                 console.log(entry);
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('__show');
+                    entry.target.classList.add("__show");
                 } else {
-                    entry.target.classList.remove('__show');
+                    entry.target.classList.remove("__show");
                 }
-            })
+            });
         });
-          
+
         const hiddenElements = document.querySelectorAll(".__hidden");
-        hiddenElements.forEach(el => observer.observe(el))
+        hiddenElements.forEach(el => observer.observe(el));
 
         document.title =
             getCurrentLang() === "sb"
                 ? "kostrjanc - Što je kostrjanc"
                 : "kostrjanc - Was ist kostrjanc";
 
-        return (() => {
+        return () => {
             observer.disconnect();
-        })
+        };
     }, []);
 
     return (
-        <div className={`bg-primary ${styles.flexCenterVert} flex flex-col w-full`}>
+        <div
+            className={`bg-primary ${styles.flexCenterVert} flex flex-col w-full`}>
             <AboutNavbar />
 
-            <div className={`${styles.paddingX} w-full flex-col ${styles.flexCenterVert}`}>
+            <div
+                className={`${styles.paddingX} w-full flex-col ${styles.flexCenterVert}`}>
                 {/* Start */}
                 <div className="">
                     <div className={`${styles.paddingY} w-full`}>
-                        <h1 className={`flex-1 font-barlow font-semibold ss:text-[72px] text-[52px] text-gradient ss:leading-[100.8px] leading-[75px] text-center`}>
+                        <h1
+                            className={`flex-1 font-barlow font-semibold ss:text-[72px] text-[52px] text-gradient ss:leading-[100.8px] leading-[75px] text-center`}>
                             {getCurrentLang() === "sb"
                                 ? "Što je kostrjanc?"
                                 : "Was ist kostrjanc?"}
@@ -64,11 +67,17 @@ const AboutKostrjanc = () => {
                     </div>
                 </div>
 
-                <section id="general" className={`${styles.paddingY} flex flex-col items-center w-full`}>
+                <section
+                    id="general"
+                    className={`${styles.paddingY} flex flex-col items-center w-full`}>
                     <a href="#settings">
-                        <img src={mainHeader} className="w-[240px] cursor-pointer" />
+                        <img
+                            src={mainHeader}
+                            className="w-[240px] cursor-pointer"
+                        />
                     </a>
-                    <p className={`${styles.marginY} ${styles.paragraph} w-full max-w-[720px] text-white blocksatz`}>
+                    <p
+                        className={`${styles.marginY} ${styles.paragraph} w-full max-w-[720px] text-white blocksatz`}>
                         Velit sunt magna ex dolor. Eu cillum ullamco ea esse
                         cupidatat duis id laboris consectetur ea mollit non
                         exercitation labore. Sunt aliquip ullamco esse sunt
@@ -91,11 +100,14 @@ const AboutKostrjanc = () => {
                                 : "Hauptnavigation durch kostrjanc"}
                         </h2>
 
-                        <div className={`w-full flex sm:flex-row flex-col sm:justify-between items-start flex-wrap mt-5 __hidden`}>
-
+                        <div
+                            className={`w-full flex sm:flex-row flex-col sm:justify-between items-start flex-wrap mt-5 __hidden`}>
                             <div className={`${classicBoxStyle} `}>
                                 <div className="w-full relative flex">
-                                    <img src={landing} className="w-full z-[10]" />
+                                    <img
+                                        src={landing}
+                                        className="w-full z-[10]"
+                                    />
                                     <div className="absolute blue__gradient w-full h-full z-[1]" />
                                 </div>
                                 <div className="mt-5">
@@ -110,7 +122,8 @@ const AboutKostrjanc = () => {
                                         consequat in commodo deserunt velit
                                         nostrud eu id
                                     </p>
-                                    <div className={`${styles.heading3} text-gradient flex flex-col cursor-pointer`}>
+                                    <div
+                                        className={`${styles.heading3} text-gradient flex flex-col cursor-pointer`}>
                                         <a>{"> "}Post</a>
                                         <a>{"> "}Ewent</a>
                                     </div>
@@ -119,7 +132,10 @@ const AboutKostrjanc = () => {
 
                             <div className={`${classicBoxStyle} `}>
                                 <div className="w-full relative flex">
-                                    <img src={search} className="w-full z-[10]" />
+                                    <img
+                                        src={search}
+                                        className="w-full z-[10]"
+                                    />
                                     <div className="absolute blue__gradient w-full h-full z-[1]" />
                                 </div>
                                 <div className="mt-5">
@@ -154,7 +170,8 @@ const AboutKostrjanc = () => {
                                         consequat in commodo deserunt velit
                                         nostrud eu id
                                     </p>
-                                    <div className={`${styles.heading3} text-gradient flex flex-col cursor-pointer`}>
+                                    <div
+                                        className={`${styles.heading3} text-gradient flex flex-col cursor-pointer`}>
                                         <a>{"> "}Post</a>
                                         <a>{"> "}Ewent</a>
                                     </div>
@@ -163,7 +180,10 @@ const AboutKostrjanc = () => {
 
                             <div className={`${classicBoxStyle} `}>
                                 <div className="w-full relative flex">
-                                    <img src={profile} className="w-full z-[10]" />
+                                    <img
+                                        src={profile}
+                                        className="w-full z-[10]"
+                                    />
                                     <div className="absolute blue__gradient w-full h-full z-[1]" />
                                 </div>
                                 <div className="mt-5">
@@ -178,7 +198,8 @@ const AboutKostrjanc = () => {
                                         consequat in commodo deserunt velit
                                         nostrud eu id
                                     </p>
-                                    <div className={`${styles.heading3} text-gradient flex flex-col cursor-pointer`}>
+                                    <div
+                                        className={`${styles.heading3} text-gradient flex flex-col cursor-pointer`}>
                                         <a>
                                             {getCurrentLang() === "sb"
                                                 ? "> Konto"
@@ -187,19 +208,20 @@ const AboutKostrjanc = () => {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
 
-                <div className={`${styles.paddingY} ${styles.paddingX} flex flex-col w-full items-center`}>
+                <div
+                    className={`${styles.paddingY} ${styles.paddingX} flex flex-col w-full items-center`}>
                     <h2 className={`${styles.heading2}`}>
                         {getCurrentLang() === "sb"
                             ? "Posty a ewenty"
                             : "Posts und Events"}
                     </h2>
 
-                    <div className={`w-full flex sm:flex-row flex-col sm:justify-between items-start flex-wrap mt-5`}>
+                    <div
+                        className={`w-full flex sm:flex-row flex-col sm:justify-between items-start flex-wrap mt-5`}>
                         <div className="min-w-[240px] max-w-[480px] flex flex-1 m-8 flex-col">
                             <div className="w-full relative flex">
                                 <img src={landing} className="w-full z-[10]" />
@@ -253,7 +275,9 @@ const AboutKostrjanc = () => {
                     </div>
                 </div>
 
-                <section id="post" className={`${styles.paddingY} flex flex-col items-center w-full`}></section>
+                <section
+                    id="post"
+                    className={`${styles.paddingY} flex flex-col items-center w-full`}></section>
 
                 <Footer />
             </div>

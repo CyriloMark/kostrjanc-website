@@ -39,8 +39,8 @@ button {
 
 .footer {
     position: relative;
-    width: 80%;
-    left: 10%;
+    width: 50%;
+    left: 25%;
 }
 
 .footer .link-box {
@@ -49,8 +49,20 @@ button {
 .footer .link-box a p {
     margin-top: 0.5rem;
 }
-.footer .stiftung {
+.footer .stiftung_container {
     margin-top: 1rem;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+.footer .stiftung_container img {
+    width: 3rem;
+    height: 6rem;
+}
+
+.footer .stiftung {
+    margin-left: 1rem;
+    text-align: justify;
 }
 .footer .copy {
     margin: 1rem 0;

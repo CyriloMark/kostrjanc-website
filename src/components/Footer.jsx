@@ -62,7 +62,7 @@ const Footer = () => {
             <div className="w-full mt-10">
                 <p
                     className={`font-normal text-dimWhite text-[16px] leading-[20px] font-roboto_mono text-center`}>
-                    &copy; 2022-2024 | All Rights Reserved | Produced by Cyrill
+                    &copy; 2022-2025 | All Rights Reserved | Produced by Cyrill
                     Mark and Korla Baier
                 </p>
             </div>

@@ -25,6 +25,7 @@ import {
     Link,
 } from "react-router-dom";
 import Share from "./pages/Share";
+import Business from "./components/_formular/Business";
 
 const App = () => {
     const router = createBrowserRouter([
@@ -70,6 +71,16 @@ const App = () => {
         {
             path: "/impresum/skitdatow",
             element: <AgbLegal />,
+            errorElement: <Error />,
+        },
+        {
+            path: "/about",
+            element: <About />,
+            errorElement: <Error />,
+        },
+        {
+            path: "/business",
+            element: <Formular />,
             errorElement: <Error />,
         },
     ]);

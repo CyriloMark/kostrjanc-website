@@ -33,6 +33,7 @@
 .hero .text-box p {
     margin-top: 1rem;
     font-weight: 400;
+    text-align: justify;
 }
 .hero .text-box #button {
     margin-top: 2rem;
@@ -113,6 +114,7 @@ section h3 {
 }
 .about .text-box p {
     margin-top: 2rem;
+    text-align: justify;
 }
 
 @media screen and (max-width: 768px) {

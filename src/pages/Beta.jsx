@@ -2,7 +2,7 @@ import React from "react";
 import { useCountdown } from "../hooks/Countdown";
 
 export default function Beta() {
-    const [sec, min, h, d] = useCountdown("1 1 2024 12:00");
+    const [sec, min, h, d] = useCountdown("1 1 2025 12:00");
 
     console.log(sec);
     return (
