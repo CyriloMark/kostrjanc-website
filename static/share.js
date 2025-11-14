@@ -68,7 +68,11 @@ function openApp() {
 
     if (
         searches.length !== 2 ||
-        !(searches[0] === "t=p" || searches[0] === "t=e")
+        !(
+            searches[0] === "t=p" ||
+            searches[0] === "t=e" ||
+            searches[0] === "t=u"
+        )
     )
         return;
 
