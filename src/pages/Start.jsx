@@ -9,6 +9,9 @@ import Countdown from "../components/_start/Countdown";
 import Help from "../components/_start/Help";
 import Footer from "../components/Footer";
 
+import { openApp } from "../constants/share";
+import { Button } from "../components";
+
 const Start = () => {
     const [release, setRelease] = useState("");
 
@@ -30,6 +33,12 @@ const Start = () => {
             <div className={`${styles.boxWidth}`}>
                 <Hero />
             </div>
+
+            <Button
+                onClick={() => {
+                    console.log("idoo");
+                }}
+            />
 
             <div
                 className={`${styles.paddingX} ${styles.flexCenterVert} w-full flex-col`}>

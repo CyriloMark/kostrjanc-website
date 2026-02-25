@@ -79,5 +79,6 @@ function openApp() {
     const type = searches[0];
     const id = searches[1].substring(3);
 
+    console.log(`kostrjanc://${type}/${id}`);
     window.open(`kostrjanc://${type}/${id}`);
 }
